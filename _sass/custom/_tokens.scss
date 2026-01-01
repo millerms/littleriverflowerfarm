@@ -1,0 +1,32 @@
+/* Tokens (Glass + Motion + Reveal) */
+:root {
+  /* Glass base */
+  --glass-tint: 220 55% 25%;
+  --glass-alpha: 0.10;       /* surface opacity */
+  --glass-stroke: 0.30;      /* border opacity */
+  --glass-shadow: 0.35;      /* shadow opacity */
+  --glass-tint-hsl-submenu: 220 31% 25%;
+
+  /* Derived */
+  --glass-bg: hsl(var(--glass-tint) / var(--glass-alpha));
+  --glass-bg-strong: hsl(var(--glass-tint) / 0.35);
+  --glass-border: hsl(var(--glass-tint) / var(--glass-stroke));
+  --glass-shadow-light: rgba(0,0,0,var(--glass-shadow));
+
+  /* Radii, blur, timing */
+  --r-lg: 20px; --r-md: 14px; --r-sm: 10px;
+  --blur-lg: 18px; --blur-md: 12px; --blur-sm: 4px;
+  --t-fast: 0.18s; --t-med: 0.28s;
+  --e-out: cubic-bezier(0.22, 0.61, 0.36, 1);
+
+  /* Reveal system */
+  --reveal-duration: 0.5s;
+  --reveal-ease: cubic-bezier(0.215, 0.61, 0.355, 1);
+  --reveal-offset: 12px;
+  --reveal-blur: 0.25px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root { --glass-shadow: 0.45; }
+}
+

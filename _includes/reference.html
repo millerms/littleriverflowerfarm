@@ -1,0 +1,37 @@
+{% assign pmid = include.pmid | default: '' %}
+{% assign num = include.num | default: '' %}
+{% assign title = include.title | default: '' %}
+{% assign authors = include.authors | default: '' %}
+{% assign journal = include.journal | default: '' %}
+{% assign year = include.year | default: '' %}
+{% assign doi = include.doi | default: '' %}
+{% assign url = include.url | default: '' %}
+{% assign back = include.back | default: '' %}
+
+{% comment %}
+Usage:
+{% include reference.html pmid="31452104" num="1" %}
+Optional: title, authors, journal, year, doi, url for static fallback.
+{% endcomment %}
+
+{% capture item_id %}ref-{{ pmid | default: title | slugify }}{% endcapture %}
+
+<li class="ref-item" id="{{ item_id }}" {% if pmid %}data-pubmed-id="{{ pmid }}"{% endif %}>
+  <div class="ref-num">{{ num }}</div>
+  <div class="ref-main">
+    <a class="ref-link" href="{{ url | default: (pmid | prepend: 'https://pubmed.ncbi.nlm.nih.gov/' | append: '/') }}" target="_blank" rel="noopener">
+      <span class="ref-title">{{ title }}</span>
+    </a>
+    <div class="ref-authors">{{ authors }}</div>
+    <div>
+      <span class="ref-journal">{{ journal }}</span>
+      {% if year %}<span class="ref-meta"> • <span class="ref-year">{{ year }}</span></span>{% endif %}
+    </div>
+    <div class="ref-actions">
+      {% if pmid %}<span class="ref-badge ref-badge--pmid" title="PubMed ID">PMID {{ pmid }}</span>{% endif %}
+      <a class="ref-doi ref-link" {% unless doi %}style="display:none"{% endunless %} href="{% if doi %}https://doi.org/{{ doi }}{% endif %}">DOI <span class="ref-doi">{{ doi }}</span></a>
+      <button class="btn-modern btn-modern--sm btn-modern--outline" type="button" data-copy-citation>Copy</button>
+      {% if back %}<a class="ref-link" href="#{{ back }}">Back to text</a>{% endif %}
+    </div>
+  </div>
+</li>

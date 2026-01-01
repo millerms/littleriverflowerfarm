@@ -1,0 +1,36 @@
+/* Accessible accordion using native <details> */
+details.accordion {
+  background: var(--c-surface);
+  border: 1px solid var(--c-border);
+  border-radius: var(--r-md);
+  margin: 0 0 .75rem;
+}
+
+details.accordion > summary {
+  cursor: pointer;
+  list-style: none;
+  padding: .75rem 1rem;
+  font-weight: 800;
+  display: flex; align-items: center; gap: .5rem;
+}
+details.accordion > summary::-webkit-details-marker { display: none; }
+
+details.accordion > summary::before {
+  content: "+";
+  font-weight: 900;
+  width: 1em; text-align: center;
+  color: var(--c-link);
+}
+
+details.accordion[open] > summary::before { content: "–"; }
+
+details.accordion > .accordion__content {
+  border-top: 1px solid var(--c-border);
+  padding: .75rem 1rem 1rem;
+}
+
+details.accordion > summary:focus-visible {
+  outline: 2px solid var(--c-accent);
+  outline-offset: 3px;
+}
+

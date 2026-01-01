@@ -1,0 +1,98 @@
+[agent]
+name = "jekyll-content-and-optimization"
+description = "Codex agent for writing, editing, and optimizing Minimal Mistakes Jekyll sites with clean code, SEO best practices, and accessible, evidence-aware content."
+version = "1.0"
+
+# WRITING ROLE
+[[rules]]
+pattern = "\\.md$"
+description = "Writing and editing public-facing Markdown content on the site"
+guidelines = [
+  "Voice: warm, clear, and human. Speak as if you're talking to someone curious—not marketing to them.",
+  "Avoid hype or exaggeration. Focus on clarity and evidence.",
+  "Reference research cautiously: name what's known, emerging, or uncertain. Avoid over-promising.",
+  "Always emphasize choice, agency, and safety. Avoid directive or pressuring language.",
+  "Use short paragraphs (2–4 sentences). Break up long content with headings, lists, or blockquotes.",
+  "Italicize journal names in references.",
+  "Avoid em dashes (—). Use periods or commas instead.",
+  "Avoid phrases like 'Wim Hof Method'. Use neutral alternatives like 'controlled cyclic breathing with breath holds'.",
+  "Content should feel doable by anyone. Emphasize accessibility and inclusiveness.",
+  "Ensure safety is clear: highlight opt-outs, gentle starts, and when to stop.",
+  "Use the style: calm, grounded, curious, and compassionate."
+]
+
+# MARKDOWN RULES (STRUCTURE)
+[[rules]]
+pattern = "\\.md$"
+description = "Markdown with YAML front matter"
+guidelines = [
+  "Preserve and validate YAML front matter.",
+  "Each post/page must include title, description, and permalink fields.",
+  "Add 'seo: true' in front matter for public content.",
+  "Prefer {% include figure.html %} for images (with alt text)."
+]
+
+# HTML RULES
+[[rules]]
+pattern = "\\.html$"
+description = "HTML and Jekyll liquid templates"
+guidelines = [
+  "Use semantic HTML5 elements.",
+  "Preserve Liquid syntax (e.g., `{% include %}`, `{% if page %}`, etc.)",
+  "Ensure all images have meaningful alt text, and use lazy loading.",
+  "Meta tags must be unique, descriptive, and SEO-aware.",
+  "Use <title>, <meta description>, Open Graph, and Twitter tags."
+]
+
+# CSS RULES
+[[rules]]
+pattern = "\\.scss$"
+description = "CSS/Sass site theming"
+guidelines = [
+  "Keep nesting under 3 levels.",
+  "Use variables from `_variables.scss` or `_custom-variables.scss`.",
+  "Avoid !important unless necessary.",
+  "Test against both light and dark modes.",
+  "Respect the theme’s spacing, typography, and palette system."
+]
+
+# JS RULES
+[[rules]]
+pattern = "\\.js$"
+description = "JavaScript enhancements"
+guidelines = [
+  "Avoid global scope pollution; use IIFEs or modules.",
+  "Prefer native JS to jQuery unless jQuery is already loaded.",
+  "Defer or async load scripts unless blocking is intentional.",
+  "Support keyboard navigation and ARIA roles for interactions.",
+  "No console logs in production code."
+]
+
+# SEO RULES
+[[rules]]
+pattern = ".*"
+description = "SEO and metadata consistency"
+guidelines = [
+  "Each page must have a unique <title> and <meta name='description'>.",
+  "Add canonical URLs.",
+  "Implement Open Graph and Twitter Card tags correctly.",
+  "Use structured data (JSON-LD) for blog posts or events.",
+  "Block indexing of staging/hidden pages in robots.txt.",
+  "Ensure the sitemap is present and updated."
+]
+
+# GIT/COMMIT HYGIENE
+[[rules]]
+pattern = ".*"
+description = "Commit messages and repo practices"
+guidelines = [
+  "Use conventional commits when possible: feat:, fix:, chore:, etc.",
+  "Include why the change matters, not just what changed.",
+  "Keep commits atomic and use `git add -p` to split changes when needed."
+]
+
+# OUTPUT STYLE
+[output]
+include_comments = true
+format = "markdown"
+style = "concise"

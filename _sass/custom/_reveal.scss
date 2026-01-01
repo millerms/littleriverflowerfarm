@@ -1,0 +1,26 @@
+/* CSS: Reveal Animations */
+.reveal {
+  opacity: 0;
+  transform: translateY(var(--reveal-offset));
+  filter: blur(var(--reveal-blur));
+  transition: opacity var(--reveal-duration) var(--reveal-ease),
+              transform var(--reveal-duration) var(--reveal-ease),
+              filter var(--reveal-duration) var(--reveal-ease);
+  will-change: opacity, transform, filter;
+}
+
+.reveal.is-revealed { opacity: 1; transform: none; filter: none; }
+
+/* Modifiers */
+.reveal--fade  { transform: none; }
+.reveal--up    { transform: translateY(calc(var(--reveal-offset) * 1.33)); }
+.reveal--scale { transform: scale(0.985); }
+
+/* Stagger children without extra JS */
+[data-reveal-stagger] > .reveal { transition-delay: calc(var(--i, 0) * 80ms); }
+[data-reveal-stagger] > .reveal:nth-child(n) { --i: n; }
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal { opacity: 1 !important; transform: none !important; filter: none !important; }
+}
+

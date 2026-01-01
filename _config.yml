@@ -1,0 +1,232 @@
+# Theme Settings
+remote_theme: "mmistakes/minimal-mistakes@4.27.3"
+minimal_mistakes_skin: ""
+
+# Site settings
+title: "Mike's Custom MM Template"
+description: "Temp."
+url: ""
+baseurl: ""
+locale: en-US
+og_image: 
+logo: 
+tagline: 
+
+# Site Author
+author:
+  name: "Michael Miller"
+  # avatar: "/assets/images/bio-photo.jpg"
+  # bio: 
+  # location: 
+  # email: 
+
+# Site Footer
+footer:
+  links:
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      # url:
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook-square"
+      # url:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      # url:
+    - label: "GitLab"
+      icon: "fab fa-fw fa-gitlab"
+      # url:
+    - label: "Bitbucket"
+      icon: "fab fa-fw fa-bitbucket"
+      # url:
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      # url:
+
+# Custom scripts loaded in footer
+footer_scripts:
+  - /assets/js/reveal.js
+  - /assets/js/tactile.js
+  - /assets/js/ui.js
+  - /assets/js/refs.js
+
+# Theme settings
+plugins:
+  - jekyll-remote-theme
+  - jekyll-data
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-include-cache
+
+# Navigation
+navigation:
+  - title: "Home"
+    url: "/"
+
+# Theme default: 'system' | 'light' | 'dark'
+theme_default: system
+
+# Collections
+collections:
+  pages:
+    output: true
+    permalink: /:path/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: single
+      author_profile: false
+      classes: wide
+
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: single
+      author_profile: false
+      classes: wide
+  
+# Markdown Processing
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
+# Reading Files
+include:
+  - .htaccess
+  - _pages
+
+exclude:
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - vendor
+  - .asset-cache
+  - .bundle
+  - .jekyll-assets-cache
+  - .sass-cache
+  - assets/js/plugins
+  - assets/js/_main.js
+  - assets/js/vendor
+  - Capfile
+  - CHANGELOG
+  - config
+  - Gemfile
+  - Gruntfile.js
+  - gulpfile.js
+  - LICENSE
+  - log
+  - minimal-mistakes-jekyll.gemspec
+  - node_modules
+  - package.json
+  - package-lock.json
+  - Rakefile
+  - README
+  - tmp
+  - /docs
+  - /test
+
+keep_files:
+  - .git
+  - .svn
+
+encoding: "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+
+# Sass/SCSS
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Outputting
+permalink: /:categories/:title/
+timezone: ""
+
+# Pagination with jekyll-paginate
+paginate: 5
+paginate_path: /page:num/
+
+atom_feed:
+hide: TRUE
+
+# Optional Integrations (commented out for future use)
+
+# comments:
+#   provider: 
+#   disqus:
+#     shortname: 
+#   discourse:
+#     server: 
+#   facebook:
+#     appid: 
+#     num_posts: 
+#     colorscheme: 
+#   utterances:
+#     theme: 
+#     issue_term: 
+#   giscus:
+#     repo_id: 
+#     category_name: 
+#     category_id: 
+#     discussion_term: 
+#     reactions_enabled: 
+#     theme: 
+#     strict: 
+#     input_position: 
+#     emit_metadata: 
+#     lang: 
+#     lazy: 
+#   staticman:
+#     branch: 
+#     endpoint: 
+# reCaptcha:
+#   siteKey: 
+#   secret: 
+# atom_feed:
+#   path: 
+#   hide: 
+# search: 
+# search_full_content: 
+# search_provider: 
+# lunr:
+#   search_within_pages: 
+# algolia:
+#   application_id: 
+#   index_name: 
+#   search_only_api_key: 
+#   powered_by: 
+# google:
+#   search_engine_id: 
+#   instant_search: 
+# google_site_verification: 
+# bing_site_verification: 
+# naver_site_verification: 
+# yandex_site_verification: 
+# baidu_site_verification: 
+# twitter:
+#   username: 
+# facebook:
+#   username: 
+#   app_id: 
+#   publisher: 
+# og_image: 
+# social:
+#   type: 
+#   name: 
+#   links: 
+
+# analytics:
+#   provider: 
+#   google:
+#     tracking_id: 
+#     anonymize_ip: 

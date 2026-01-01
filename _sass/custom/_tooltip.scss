@@ -1,0 +1,34 @@
+/* Lightweight tooltips via [data-tooltip] */
+[data-tooltip] { position: relative; }
+
+[data-tooltip]::after {
+  content: attr(data-tooltip);
+  position: absolute; left: 50%; bottom: calc(100% + 8px);
+  transform: translateX(-50%);
+  background: var(--c-text);
+  color: var(--c-bg);
+  font-size: .85em; font-weight: 700;
+  padding: .35em .5em; border-radius: .5em;
+  white-space: nowrap; pointer-events: none;
+  opacity: 0; visibility: hidden;
+  transition: opacity var(--t-fast) var(--e-out),
+              transform var(--t-fast) var(--e-out),
+              visibility var(--t-fast) var(--e-out);
+  z-index: 10;
+}
+
+[data-tooltip]::before {
+  content: ""; position: absolute;
+  left: 50%; bottom: calc(100% + 3px); transform: translateX(-50%);
+  border: 6px solid transparent; border-top-color: var(--c-text);
+  opacity: 0; visibility: hidden; z-index: 10;
+  transition: opacity var(--t-fast) var(--e-out), visibility var(--t-fast) var(--e-out);
+}
+
+[data-tooltip]:hover::after,
+[data-tooltip]:focus-visible::after,
+[data-tooltip]:hover::before,
+[data-tooltip]:focus-visible::before {
+  opacity: 1; visibility: visible; transform: translateX(-50%) translateY(-2px);
+}
+

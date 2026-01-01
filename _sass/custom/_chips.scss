@@ -1,0 +1,24 @@
+/* Chips / Tags */
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
+  padding: .25em .6em;
+  border-radius: 999px;
+  border: 1px solid var(--c-border);
+  background: color-mix(in srgb, var(--c-link) 10%, transparent);
+  color: var(--c-link);
+  font-weight: 800;
+  line-height: 1;
+}
+
+.chip__icon { width: 1em; height: 1em; display: inline-flex; align-items: center; }
+.chip__icon--left { margin-right: .25em; }
+.chip__icon--right { margin-left: .25em; }
+
+/* Status variants */
+.chip--success { background: color-mix(in srgb, #17a72d 12%, transparent); color: #0d6b1c; border-color: color-mix(in srgb, #17a72d 40%, transparent); }
+.chip--info    { background: color-mix(in srgb, var(--c-accent) 16%, transparent); color: #0b5b55; border-color: color-mix(in srgb, var(--c-accent) 40%, transparent); }
+.chip--warn    { background: color-mix(in srgb, #f7b500 18%, transparent); color: #7a4f00; border-color: color-mix(in srgb, #f7b500 40%, transparent); }
+.chip--danger  { background: color-mix(in srgb, #e53935 14%, transparent); color: #7f1e1c; border-color: color-mix(in srgb, #e53935 40%, transparent); }
+

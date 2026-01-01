@@ -1,0 +1,27 @@
+/* CSS-only tabs (radio inputs) */
+.tabs { margin: 1rem 0; }
+.tabs__list { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 .5rem; }
+.tabs__radio { position: absolute; opacity: 0; pointer-events: none; }
+
+.tabs__label {
+  display: inline-block; cursor: pointer; user-select: none;
+  padding: .45rem .75rem; border-radius: .6rem;
+  background: color-mix(in srgb, var(--c-link) 10%, transparent);
+  color: var(--c-link);
+  border: 1px solid var(--c-border);
+  font-weight: 800;
+}
+
+.tabs__panel {
+  display: none; padding: .75rem; border: 1px solid var(--c-border);
+  border-radius: .6rem; background: var(--c-surface);
+}
+
+/* Checked state: style label and panel */
+.tabs__radio:checked + .tabs__label {
+  background: var(--c-link); color: #fff; border-color: var(--c-link);
+}
+.tabs__radio:checked + .tabs__label + .tabs__panel { display: block; }
+
+.tabs__label:focus-visible { outline: 2px solid var(--c-accent); outline-offset: 3px; }
+

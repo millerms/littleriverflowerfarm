@@ -1,0 +1,40 @@
+{% if site.data.navigation and site.data.navigation.main %}
+  <div class="page__footer-nav">
+    {% for item in site.data.navigation.main %}
+      <a href="{{ item.url | relative_url }}">{{ item.title | escape_once | strip }}</a>{% unless forloop.last %} <span class="pipe" aria-hidden="true">|</span> {% endunless %}
+    {% endfor %}
+  </div>
+{% endif %}
+
+{% unless site.atom_feed.hide %}
+  {% assign show_atom = true %}
+{% endunless %}
+{% if site.footer.links or show_atom %}
+<div class="page__footer-follow">
+  <ul class="social-icons">
+    <!-- Theme toggle (left side) -->
+    <li class="theme-switch">
+      <span class="theme-label theme-label--light">Light</span>
+      <button class="theme-toggle" type="button" aria-label="Toggle color theme" aria-pressed="false">
+        <span class="theme-toggle__track">
+          <span class="theme-toggle__icon theme-toggle__icon--left" aria-hidden="true"></span>
+          <span class="theme-toggle__icon theme-toggle__icon--right" aria-hidden="true"></span>
+          <span class="theme-toggle__thumb" aria-hidden="true"></span>
+        </span>
+      </button>
+      <span class="theme-label theme-label--dark">Dark</span>
+    </li>
+
+    {% if site.footer.links %}
+      {% for link in site.footer.links %}
+        {% if link.label and link.url %}
+          <li><a href="{{ link.url }}" rel="nofollow noopener noreferrer"><i class="{{ link.icon | default: 'fas fa-link' }}" aria-hidden="true"></i> {{ link.label | escape_once | strip }}</a></li>
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+  </ul>
+  </div>
+{% endif %}
+
+
+<div class="page__footer-copyright">&copy; {% assign site_time = site.time | date: '%Y' %}{% if site.footer.since and site_time != site.footer.since %}{{ site.footer.since }} - {% endif %}{{ site_time }} <a href="{{ site.copyright_url | default: site.url }}">{{ site.copyright | default: site.title | escape_once | strip }}</a>. {{ site.data.ui-text[site.locale].powered_by | default: "Powered by" }} <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>. Built by Michael Miller.</div>

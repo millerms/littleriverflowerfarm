@@ -1,0 +1,33 @@
+{% comment %}
+Inline citation with auto-numbering and backlink anchor.
+Usage: {% include cite.html pmid="31452104" %}
+Optional: target (custom href id), label (override display text)
+Generates: <sup class="citation"><a id="cite-<pmid>-<n>" href="#ref-<pmid>">[n]</a></sup>
+{% endcomment %}
+
+{% assign _pmid = include.pmid | default: '' %}
+{% assign _target = include.target | default: '' %}
+{% assign _label = include.label | default: '' %}
+
+{% if citation_index %}
+  {% assign citation_index = citation_index | plus: 1 %}
+{% else %}
+  {% assign citation_index = 1 %}
+{% endif %}
+
+{% assign _href = '' %}
+{% assign _id = '' %}
+{% if _pmid %}
+  {% assign _href = _pmid | prepend: 'ref-' %}
+  {% assign _id = citation_index | prepend: '-' | prepend: _pmid | prepend: 'cite-' %}
+{% elsif _target %}
+  {% assign _href = _target %}
+  {% assign _id = citation_index | prepend: '-' | prepend: _target | slugify | prepend: 'cite-' %}
+{% endif %}
+
+<sup class="citation">
+  <a id="{{ _id }}" href="#{{ _href }}" aria-label="Reference {{ citation_index }}">
+    [{% if _label != '' %}{{ _label }}{% else %}{{ citation_index }}{% endif %}]
+  </a>
+</sup>
+

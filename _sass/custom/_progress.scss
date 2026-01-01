@@ -1,0 +1,26 @@
+/* Progress bar and stepper */
+.progress {
+  --value: 0%;
+  position: relative;
+  height: 10px;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--c-link) 10%, transparent);
+  border: 1px solid var(--c-border);
+  overflow: hidden;
+}
+
+.progress__bar {
+  height: 100%;
+  width: var(--value);
+  background: linear-gradient(90deg, var(--c-link), var(--c-link-hover));
+}
+
+.progress__label { margin-top: .25rem; font-weight: 800; font-size: .9em; }
+
+/* Stepper */
+.steps { display: flex; gap: 10px; align-items: center; }
+.step { width: 24px; height: 24px; border-radius: 50%; border: 2px solid var(--c-border); display: inline-flex; align-items: center; justify-content: center; font-weight: 900; font-size: .8em; }
+.step.is-active { border-color: var(--c-link); color: #fff; background: var(--c-link); }
+.step.is-done  { border-color: var(--c-link); background: color-mix(in srgb, var(--c-link) 18%, transparent); }
+.step__label { font-weight: 800; margin-left: 4px; }
+

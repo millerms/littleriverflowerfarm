@@ -1,0 +1,20 @@
+/* Footer navigation with pipes */
+.page__footer-nav { margin: 0 0 8px; text-align: center; }
+.page__footer-nav a {
+  color: inherit;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: calc(1em - 1px); /* inherit default size */
+}
+.page__footer-nav a:hover { text-decoration: underline; }
+.page__footer-nav .pipe { opacity: .45; margin: 0 .4em; }
+
+/* Shrink nav links and toggle on small screens */
+@media (max-width: 480px) {
+  .page__footer-nav a { font-size: calc(1em - 2.5px); }
+  .page__footer-follow .theme-switch {
+    transform: scale(0.85);
+    transform-origin: center;
+  }
+}
+

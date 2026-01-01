@@ -1,0 +1,17 @@
+[project]
+name = "Template for Minimal Mistakes Jekyll Site"
+description = "Configuration for Codex tailored to Minimal Mistakes Jekyll site projects."
+
+[agents.jekyll]
+path = ".codex/agents/jekyll-minimal-mistakes-optimizer.toml"
+
+[agent]
+guidance_file = ".codex/agents/memory-bank.md"
+default_tone = "professional"
+formatting = { line_length = 80, indent_style = "spaces", indent_size = 2 }
+preferred_language = "markdown"
+
+[commits]
+conventional_style = true
+prefixes = ["feat", "fix", "chore", "docs"]
+message_format = "<prefix>: <subject>"

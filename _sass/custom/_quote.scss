@@ -1,0 +1,32 @@
+/* Quote/Testimonial */
+.quote {
+  background: var(--c-surface);
+  border: 1px solid var(--c-border);
+  border-left: 4px solid var(--c-link);
+  border-radius: var(--r-md);
+  padding: clamp(14px, 2vw, 18px) clamp(16px, 3vw, 24px);
+  margin: 1rem 0;
+  position: relative;
+}
+
+.quote::before {
+  content: "\201C"; /* opening quote */
+  position: absolute;
+  top: .25rem; left: .5rem;
+  font-size: 3.25rem; line-height: 1;
+  font-weight: 900; font-family: serif;
+  color: var(--c-text);
+  opacity: .12;
+  pointer-events: none;
+}
+
+.quote blockquote { margin: 0; font-style: italic; font-size: 1.05em; }
+.quote blockquote p { margin: 0; }
+
+.quote figcaption { margin-top: .6rem; font-weight: 800; opacity: .9; }
+.quote__meta { font-weight: 700; opacity: .7; margin-left: .35rem; }
+
+/* Optional avatar support */
+.quote__author { display: inline-flex; align-items: center; gap: .5rem; }
+.quote__avatar { width: 36px; height: 36px; border-radius: 50%; object-fit: cover; }
+
