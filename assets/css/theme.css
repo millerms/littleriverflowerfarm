@@ -2,49 +2,30 @@
 
 :root,
 :root[data-theme='light'] {
-  /* Earth Light */
-  --c-bg: #faf5ef;              /* warm paper */
-  --c-surface: #f2ece4;         /* card surface */
-  --c-surface-footer: #e8e0d4;  /* footer surface */
-  --c-text: #2d2a26;            /* deep neutral */
-  --c-muted: #8a857e;           /* muted text */
-  --c-link: #2f7d44;            /* forest green */
-  --c-link-hover: #3faa5c;      /* brighter green */
-  --c-link-visited: #6bbe8a;    /* soft sage */
-  --c-border: rgba(0, 0, 0, 0.12);
-  --c-code-bg: #f6efe7;         /* warm panel */
-  --c-code-text: #4a463f;       /* readable code */
-  --c-accent: #c07a2c;          /* warm amber */
+  /* Little River Light */
+  --c-bg: #FFF8ED;               /* warm cream */
+  --c-surface: #FFFFFF;          /* white surface */
+  --c-surface-footer: #65435F;   /* plum footer */
+  --c-text: #373D42;             /* charcoal */
+  --c-muted: #6E7479;            /* soft gray */
+  --c-link: #65435F;             /* plum */
+  --c-link-hover: #4F334A;       /* deeper plum */
+  --c-link-visited: #7A5A75;     /* softened plum */
+  --c-border: rgba(55, 61, 66, 0.12);
+  --c-code-bg: #FFF2E5;          /* warm panel */
+  --c-code-text: #4A3A46;        /* readable code */
+  --c-accent: #F5D9D5;           /* blush accent */
+  --c-btn-bg: #F5D9D5;           /* blush buttons */
+  --c-btn-bg-hover: #EEC7C3;     /* deeper blush */
+  --c-btn-text: #65435F;         /* plum text */
   /* Page header overlay (Light) */
-  --page-hero-overlay: rgba(21, 67, 21, 0.88); /* deep olive */
+  --page-hero-overlay: rgba(101, 67, 95, 0.75);
   /* Menu dropdown panel background (Light) */
   --menu-panel-bg: var(--c-surface);
   /* Legacy: glass tint var (unused by panel) */
-  --menu-glass-bg: rgba(7, 63, 24, 0.22);
+  --menu-glass-bg: rgba(101, 67, 95, 0.12);
 }
 
-/* Fallback via JS: data-theme="dark|light" is set before CSS loads */
-:root[data-theme='dark'] {
-  /* Ocean Dark */
-  --c-bg: #0a1b26;
-  --c-surface: #0d2033;
-  --c-surface-footer: #0a1f2a;
-  --c-text: #d6e1e7;
-  --c-muted: #8aa4af;
-  --c-link: #288bc5;
-  --c-link-hover: #7ee3f3;
-  --c-link-visited: #a8d0ff;
-  --c-border: rgba(255, 255, 255, 0.08);
-  --c-code-bg: #071b26;
-  --c-code-text: #cde8f2;
-  --c-accent: #36d0b6;
-  /* Page header overlay (Dark) */
-  --page-hero-overlay: rgba(11, 48, 74, 0.88);
-  /* Menu dropdown panel background (Dark) */
-  --menu-panel-bg: var(--c-surface);
-  /* Legacy glass tint */
-  --menu-glass-bg: rgba(12, 54, 92, 0.22);
-}
 
 /* Apply to major surfaces and text */
 html, body {
@@ -64,19 +45,19 @@ a:hover { color: var(--c-link-hover); }
 
 .page__footer {
   background-color: var(--c-surface-footer) !important;
-  color: var(--c-muted);
+  color: var(--c-bg);
 }
 .page__footer a,
 .page__footer-follow a,
-.page__footer-nav a { color: var(--c-link) !important; }
+.page__footer-nav a { color: var(--c-bg) !important; }
 
 .page__footer a:hover,
 .page__footer-follow a:hover,
-.page__footer-nav a:hover { color: var(--c-link-hover) !important; }
+.page__footer-nav a:hover { color: var(--c-accent) !important; }
 
 .page__footer a:visited,
 .page__footer-follow a:visited,
-.page__footer-nav a:visited { color: var(--c-link-visited) !important; }
+.page__footer-nav a:visited { color: var(--c-bg) !important; }
 
 /* Force theme link colors in masthead navigation */
 .masthead a,

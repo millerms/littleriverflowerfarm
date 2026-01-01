@@ -7,12 +7,12 @@
 /* [TK] Tokens & Theming */
 :root {
   /* Core Brand Colors */
-  --zen-bg: #b6a897;             /* page backdrop tint */
-  --zen-ink: #0e2a21;            /* headings */
-  --zen-ink-subtle: #19393b;     /* body text */
-  --zen-accent: #2e7d32;         /* green accent */
-  --zen-accent-2: #0b6aa8;       /* blue accent */
-  --primary-color: #003f5c;      /* legacy primary */
+  --zen-bg: #FFF8ED;             /* page backdrop tint */
+  --zen-ink: #373D42;            /* headings */
+  --zen-ink-subtle: #4A5156;     /* body text */
+  --zen-accent: #F5D9D5;         /* blush accent */
+  --zen-accent-2: #65435F;       /* plum accent */
+  --primary-color: #65435F;      /* legacy primary */
 
   /* Glass Morphism */
   --glass-tint: 220 55% 25%;     /* base HSL for most surfaces */
@@ -49,16 +49,7 @@
   /* Focus Ring */
   --ring: 0 0 0 3px color-mix(in oklab, white 10%, transparent);
 
-  /* Button theme tokens (for btn-modern) */
-  --c-link: var(--zen-accent);
-  --c-link-hover: color-mix(in oklab, var(--zen-accent) 85%, black 15%);
-  --c-accent: var(--zen-accent-2);
-
-  /* Neutral UI tokens for new components */
-  --c-bg: #fdfaf5;                 /* page background for tooltips contrast */
-  --c-text: var(--zen-ink);        /* base text color */
-  --c-surface: #ffffff;            /* card/accordion surface */
-  --c-border: #{'hsl(var(--glass-tint) / 0.24)'}; /* subtle border */
+  /* UI tokens live in assets/css/theme.css */
 }
 
 /* Dark mode tuning (keeps same palette, deeper shadows) */

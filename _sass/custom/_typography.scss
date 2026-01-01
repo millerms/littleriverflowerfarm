@@ -2,6 +2,14 @@
 // 🔤 Typography — Links, selection, content text
 // ==============================================
 
+body { font-family: "Times New Roman", Times, serif; }
+
+h1, h2, h3, h4, h5, h6,
+.page__title,
+.site-title {
+  font-family: Georgia, "Times New Roman", serif;
+}
+
 /* Selection */
 ::selection {
   background: color-mix(in oklab, var(--zen-ink-subtle) 20%, var(--zen-accent) 15%);
@@ -21,4 +29,3 @@ a:visited { color: color-mix(in oklab, var(--zen-ink) 70%, var(--zen-accent-2) 3
 .greedy-nav a::after { display: block; }
 /* Suppress animated underline in footer to avoid double underline under the pipe */
 .page__footer a::after { display: none; }
-

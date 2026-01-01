@@ -6,6 +6,19 @@
 /* html type scale (larger on >=900px) */
 @media (min-width: 900px) { html { font-size: 20px; } }
 
+/* Little River hero + masthead tweaks */
+@media (max-width: 900px) {
+  .lr-hero { grid-template-columns: 1fr; }
+  .lr-nav { display: flex; flex-wrap: wrap; gap: .75rem; }
+  .lr-nav .site-logo { order: 1; width: 100%; display: flex; justify-content: center; }
+  .lr-nav .visible-links { order: 2; }
+  .masthead__actions { order: 3; margin-left: auto; }
+}
+
+@media (max-width: 640px) {
+  .masthead__cta { padding: .4em 1em; font-size: .95rem; }
+}
+
 /* Background attachment/size on narrow screens */
 @media (max-width: 768px) {
   html, body { background-attachment: scroll; background-size: 100% 100%, 1200px 1200px; }

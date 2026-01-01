@@ -63,8 +63,8 @@
 }
 
 /* Footer (Glassy Forest Green) */
-.page__footer{ position:relative; overflow:hidden; -webkit-backdrop-filter: blur(var(--blur-lg)) saturate(85%); backdrop-filter: blur(var(--blur-lg)) saturate(85%); background-color: #{'hsl(var(--glass-tint-green) / .86)'}; border-top: 1px solid #{'hsl(var(--glass-tint-green) / .86)'}; box-shadow: 0 -8px 26px rgba(0,0,0,.30); color: #eaf6ef; }
-.page__footer a{ color:#eaf6ef; }
+.page__footer{ position:relative; overflow:hidden; -webkit-backdrop-filter: blur(var(--blur-lg)) saturate(85%); backdrop-filter: blur(var(--blur-lg)) saturate(85%); background-color: #{'hsl(var(--glass-tint-green) / .86)'}; border-top: 1px solid #{'hsl(var(--glass-tint-green) / .86)'}; box-shadow: 0 -8px 26px rgba(0,0,0,.30); color: #FFF8ED; }
+.page__footer a{ color:#FFF8ED; }
 .footer__inner{ position: relative; z-index: 1; max-width: 1100px; margin: 0 auto; padding: 1.25rem 1rem; display: grid; gap: .6rem; padding-left: calc(1rem + var(--footer-decor-space, 56px)); }
 .footer__nav{ display:flex; flex-wrap:wrap; gap:0; justify-content:center; align-items:center; }
 .footer__nav a{ display:inline-flex; align-items:center; text-decoration:none; border: none; }
@@ -75,8 +75,8 @@
 .footer__credit{ margin:0; font-size:.75rem; opacity:.95; }
 .footer__decor{ position:absolute; left:-10px; bottom:-8px; top:auto; height:80%; width:auto; opacity:.9; z-index:0; }
 :root{ --footer-decor-space: 56px; }
-/* Footer tint – darker green override */
-:root{ --glass-tint-green: 140 45% 10%; }
+/* Footer tint – plum override */
+:root{ --glass-tint-green: 311 33% 20%; }
 
 /* Cards, Quotes, Meetings */
 .zen-hero-banner, .page__title-wrapper, .section-divider, .zen-events-wrapper, .zen-meeting-card, .buddhist-quote, .quote-container, .zen-weekly-day{ border-radius: var(--r-lg); overflow: hidden; }
@@ -220,7 +220,7 @@ details.accordion > summary:focus-visible { outline:2px solid var(--c-accent); o
 .card:hover, .card:focus-within { transform: translateY(-2px); box-shadow: 0 10px 24px rgba(0,0,0,.16); }
 
 /* Modern buttons (from docs/button-use.md) */
-.btn-modern, a.btn-modern, button.btn-modern, input[type="button"].btn-modern, input[type="submit"].btn-modern{ display:inline-flex; align-items:center; gap:.5rem; padding:.65em 1.1em; border-radius:.75em; border:0; position:relative; overflow:hidden; --btn-bg:var(--c-link); --btn-bg-hover:var(--c-link-hover); background-color:var(--btn-bg); background-image:linear-gradient(180deg,rgba(255,255,255,.18),rgba(255,255,255,.10)45%,rgba(255,255,255,.06)60%,rgba(0,0,0,.08)100%); background-blend-mode:overlay; color:#fff!important; font-weight:800; letter-spacing:.01em; text-decoration:none!important; box-shadow:inset 0 1px 0 rgba(255,255,255,.25),0 10px 20px rgba(0,0,0,.18); transition:transform var(--t-fast,.18s) var(--e-out,cubic-bezier(.22,.61,.36,1)), box-shadow var(--t-fast,.18s) var(--e-out,cubic-bezier(.22,.61,.36,1)), background-color var(--t-fast,.18s) var(--e-out,cubic-bezier(.22,.61,.36,1)), color var(--t-fast,.18s) var(--e-out,cubic-bezier(.22,.61,.36,1)); }
+.btn-modern, a.btn-modern, button.btn-modern, input[type="button"].btn-modern, input[type="submit"].btn-modern{ display:inline-flex; align-items:center; gap:.5rem; padding:.65em 1.1em; border-radius:.75em; border:0; position:relative; overflow:hidden; --btn-bg:var(--c-btn-bg, var(--c-link)); --btn-bg-hover:var(--c-btn-bg-hover, var(--c-link-hover)); background-color:var(--btn-bg); background-image:linear-gradient(180deg,rgba(255,255,255,.18),rgba(255,255,255,.10)45%,rgba(255,255,255,.06)60%,rgba(0,0,0,.08)100%); background-blend-mode:overlay; color:var(--c-btn-text, #fff)!important; font-weight:800; letter-spacing:.01em; text-decoration:none!important; box-shadow:inset 0 1px 0 rgba(255,255,255,.25),0 10px 20px rgba(0,0,0,.18); transition:transform var(--t-fast,.18s) var(--e-out,cubic-bezier(.22,.61,.36,1)), box-shadow var(--t-fast,.18s) var(--e-out,cubic-bezier(.22,.61,.36,1)), background-color var(--t-fast,.18s) var(--e-out,cubic-bezier(.22,.61,.36,1)), color var(--t-fast,.18s) var(--e-out,cubic-bezier(.22,.61,.36,1)); }
 .btn-modern:hover,.btn-modern:focus{ background-color:var(--btn-bg-hover); transform:translateY(-1px); box-shadow:inset 0 1px 0 rgba(255,255,255,.25),0 14px 24px rgba(0,0,0,.22); }
 .btn-modern:active{ transform:translateY(0); box-shadow:0 8px 16px rgba(0,0,0,.18); }
 .btn-modern:focus-visible{ outline:2px solid var(--c-accent); outline-offset:3px; }

@@ -12,18 +12,6 @@
 {% if site.footer.links or show_atom %}
 <div class="page__footer-follow">
   <ul class="social-icons">
-    <!-- Theme toggle (left side) -->
-    <li class="theme-switch">
-      <span class="theme-label theme-label--light">Light</span>
-      <button class="theme-toggle" type="button" aria-label="Toggle color theme" aria-pressed="false">
-        <span class="theme-toggle__track">
-          <span class="theme-toggle__icon theme-toggle__icon--left" aria-hidden="true"></span>
-          <span class="theme-toggle__icon theme-toggle__icon--right" aria-hidden="true"></span>
-          <span class="theme-toggle__thumb" aria-hidden="true"></span>
-        </span>
-      </button>
-      <span class="theme-label theme-label--dark">Dark</span>
-    </li>
 
     {% if site.footer.links %}
       {% for link in site.footer.links %}

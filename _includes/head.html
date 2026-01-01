@@ -19,23 +19,8 @@
 <!-- Early theme boot to avoid flash -->
 <script>
   (function () {
-    var DEFAULT_THEME = '{{ site.theme_default | default: "system" }}'; // 'light' | 'dark' | 'system'
-    try {
-      var t = localStorage.getItem('theme');
-      if (t === 'light' || t === 'dark') {
-        document.documentElement.setAttribute('data-theme', t);
-        return;
-      }
-    } catch (e) {}
-    if (DEFAULT_THEME === 'dark' || DEFAULT_THEME === 'light') {
-      document.documentElement.setAttribute('data-theme', DEFAULT_THEME);
-      return;
-    }
-    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      document.documentElement.setAttribute('data-theme', 'dark');
-    } else {
-      document.documentElement.setAttribute('data-theme', 'light');
-    }
+    try { localStorage.removeItem('theme'); } catch (e) {}
+    document.documentElement.setAttribute('data-theme', 'light');
   })();
   </script>
 

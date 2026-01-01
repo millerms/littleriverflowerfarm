@@ -11,14 +11,7 @@ html {
 
 html, body {
   margin: 0; padding: 0;
-  background-image:
-    linear-gradient(hsla(45, 25%, 93%, 0.94)),
-    url('/assets/images/rice-paper-1.webp');
-  background-size: 100% 100%, 1600px 1600px;
-  background-repeat: no-repeat, repeat;
-  background-position: center top;
-  background-attachment: fixed;
-  background-blend-mode: overlay;
+  background-color: var(--c-bg);
   color: var(--zen-ink-subtle);
   line-height: 1.6;
   overflow-x: hidden; /* Prevent horizontal scroll */
@@ -85,4 +78,3 @@ html, body {
 .text--base { font-size: 1rem; line-height: 1.6; }
 .text--lg { font-size: 1.125rem; line-height: 1.5; }
 .text--xl { font-size: 1.25rem; line-height: 1.4; }
-

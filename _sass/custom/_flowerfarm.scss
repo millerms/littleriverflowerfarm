@@ -1,0 +1,165 @@
+// ==============================================
+// 🌸 Little River Flower Farm — page layouts
+// ==============================================
+
+.lr-section { margin: clamp(2rem, 4vw, 3.5rem) 0; }
+
+.lr-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: clamp(1.5rem, 3vw, 3rem);
+  align-items: center;
+  padding: clamp(1.5rem, 3vw, 3rem);
+  background: var(--c-surface);
+  border: 1px solid var(--c-border);
+  border-radius: var(--r-lg);
+  box-shadow: 0 18px 40px rgba(0,0,0,.08);
+}
+
+.lr-hero__media img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: var(--r-md);
+}
+
+.lr-hero__title {
+  font-size: clamp(1.6rem, 2.8vw, 2.4rem);
+  line-height: 1.25;
+  margin: 0 0 .75rem;
+}
+
+.lr-hero__subhead {
+  margin: 0 0 .75rem;
+  font-size: 1.05rem;
+  color: var(--c-text);
+}
+
+.lr-hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .75rem;
+  margin-top: 1.25rem;
+}
+
+.lr-feature-grid .card__media { aspect-ratio: 4 / 3; }
+
+.lr-stand-details {
+  background: var(--c-surface);
+  border: 1px solid var(--c-border);
+  border-radius: var(--r-md);
+  padding: 1.5rem;
+  box-shadow: 0 10px 24px rgba(0,0,0,.08);
+}
+
+.lr-stand-details ul {
+  margin: .75rem 0 0;
+  padding-left: 1.1rem;
+}
+
+.lr-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: .75rem;
+}
+
+.lr-gallery__item {
+  margin: 0;
+  border-radius: var(--r-md);
+  overflow: hidden;
+  border: 1px solid var(--c-border);
+  background: var(--c-surface);
+}
+
+.lr-gallery__item img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.lr-testimonials {
+  background: var(--c-surface);
+  border: 1px solid var(--c-border);
+  border-radius: var(--r-lg);
+  padding: clamp(1.5rem, 3vw, 2.5rem);
+  box-shadow: 0 12px 28px rgba(0,0,0,.08);
+}
+
+.testimonial {
+  margin: 0;
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity var(--t-med) var(--e-out), transform var(--t-med) var(--e-out);
+}
+
+.testimonial.is-active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.testimonial blockquote {
+  margin: 0 0 .75rem;
+  padding: 0;
+  border: 0;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: var(--c-text);
+}
+
+.testimonial figcaption {
+  font-weight: 600;
+  color: var(--c-link);
+}
+
+.lr-contact {
+  background: var(--c-surface);
+  border: 1px solid var(--c-border);
+  border-radius: var(--r-lg);
+  padding: clamp(1.5rem, 3vw, 2.5rem);
+  box-shadow: 0 12px 26px rgba(0,0,0,.08);
+}
+
+.lr-contact form {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.lr-contact label {
+  font-weight: 600;
+}
+
+.lr-contact input,
+.lr-contact textarea {
+  width: 100%;
+  padding: .7rem .8rem;
+  border: 1px solid var(--c-border);
+  border-radius: var(--r-sm);
+  background: #fff;
+  font-family: inherit;
+  font-size: 1rem;
+  color: var(--c-text);
+}
+
+.lr-contact textarea { min-height: 160px; resize: vertical; }
+
+.lr-contact__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .75rem;
+}
+
+.lr-map {
+  border: 1px solid var(--c-border);
+  border-radius: var(--r-md);
+  overflow: hidden;
+}
+
+.lr-map iframe {
+  width: 100%;
+  height: 320px;
+  border: 0;
+  display: block;
+}

@@ -3,18 +3,18 @@ remote_theme: "mmistakes/minimal-mistakes@4.27.3"
 minimal_mistakes_skin: ""
 
 # Site settings
-title: "Mike's Custom MM Template"
-description: "Temp."
-url: ""
+title: "The Little River Flower Farm"
+description: "Organic cut flower farm and floristry studio in Redding, Connecticut."
+url: "https://www.thelittleriverflowerfarm.com"
 baseurl: ""
 locale: en-US
 og_image: 
-logo: 
-tagline: 
+logo: /assets/images/littleriverflowerfarm_logo.webp
+tagline: "Organic cut flower farm in Redding, Connecticut."
 
 # Site Author
 author:
-  name: "Michael Miller"
+  name: "Pat Miller"
   # avatar: "/assets/images/bio-photo.jpg"
   # bio: 
   # location: 
@@ -23,24 +23,12 @@ author:
 # Site Footer
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url:
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      # url:
-    - label: "GitLab"
-      icon: "fab fa-fw fa-gitlab"
-      # url:
-    - label: "Bitbucket"
-      icon: "fab fa-fw fa-bitbucket"
-      # url:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url:
+      url: "https://www.instagram.com/thelittleriverflowerfarm?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope"
+      url: "mailto:pmiller434@gmail.com"
 
 # Custom scripts loaded in footer
 footer_scripts:
@@ -48,12 +36,12 @@ footer_scripts:
   - /assets/js/tactile.js
   - /assets/js/ui.js
   - /assets/js/refs.js
+  - /assets/js/testimonials.js
 
 # Theme settings
 plugins:
   - jekyll-remote-theme
   - jekyll-data
-  - jekyll-paginate
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-include-cache
@@ -64,7 +52,7 @@ navigation:
     url: "/"
 
 # Theme default: 'system' | 'light' | 'dark'
-theme_default: system
+theme_default: light
 
 # Collections
 collections:
@@ -151,10 +139,6 @@ sass:
 # Outputting
 permalink: /:categories/:title/
 timezone: ""
-
-# Pagination with jekyll-paginate
-paginate: 5
-paginate_path: /page:num/
 
 atom_feed:
 hide: TRUE
