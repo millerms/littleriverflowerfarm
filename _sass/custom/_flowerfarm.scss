@@ -74,6 +74,13 @@
   color: var(--c-text);
 }
 
+.lr-hero__content--center {
+  grid-column: 1 / -1;
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
 .lr-hero__actions {
   display: flex;
   flex-wrap: wrap;
