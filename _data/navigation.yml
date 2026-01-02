@@ -1,7 +1,5 @@
 # main links
 main:
-  - title: "home"
-    url: /
   - title: "about"
     url: /about/
   - title: "floral design work"
