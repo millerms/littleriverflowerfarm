@@ -75,7 +75,7 @@ classes: full-width
 
     <div class="lr-contact__actions">
       <button class="btn-modern" type="submit">Send Email</button>
-      <a class="btn-modern btn-modern--outline" href="{{ '/about/' | relative_url }}">About the Farm</a>
+      <a class="btn-modern btn-modern--ghost" href="{{ '/about/' | relative_url }}">About the Farm</a>
     </div>
   </form>
 </section>

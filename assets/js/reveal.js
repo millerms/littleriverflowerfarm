@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   const prefersReduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  if (prefersReduce) return;
+  const isSmallScreen = window.matchMedia('(max-width: 700px)').matches;
+  if (prefersReduce || isSmallScreen) return;
 
   // Automatically tag common page content for reveal within _pages
   const scopes = document.querySelectorAll('.page__content');
