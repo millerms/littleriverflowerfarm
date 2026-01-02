@@ -17,6 +17,7 @@ html, body {
   overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
+
 /* Subtle parallax effect for rice paper texture */
 .parallax-paper { transform: translate3d(0,0,0); will-change: transform; }
 
@@ -30,6 +31,9 @@ html, body {
 
 /* Remove faint box outlines from content containers sitewide */
 .page, .page__content, .archive__item { box-shadow: none !important; }
+
+/* Add breathing room below masthead */
+.page__content { padding-top: 1.5rem; }
 
 /* Layout containers */
 @container { container-type: inline-size; }

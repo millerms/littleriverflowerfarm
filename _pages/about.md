@@ -11,6 +11,15 @@ The Little River Flower Farm began with a simple love for growing things. What s
 
 I am a Master Gardener with over 30 years of experience, and flowers have always been my way of connecting with nature and people. There is something special about locally grown, seasonal blooms — the way they capture the beauty of a moment, the changing seasons, and the natural rhythms of Connecticut's landscape.
 
+<section class="lr-about-grid reveal">
+  <figure>
+    <img src="/assets/images/squarespace/8F53018D-BA3F-4F1D-9EE7-FE4DB3CA7D3E.jpg" alt="Pat Miller among her blooms.">
+  </figure>
+  <figure>
+    <img src="/assets/images/squarespace/IMG_4303-EFFECTS.jpg" alt="Flower gardens at The Little River Flower Farm.">
+  </figure>
+</section>
+
 At Little River, I focus on sustainable and organic growing practices, ensuring that every bouquet and arrangement is not just beautiful but also kind to the earth. I believe flowers should be fresh, vibrant, and full of life, just as they are in the garden. That is why I harvest at peak bloom, creating lush, garden-inspired designs that feel as natural as they do elegant.
 
 ## Our Offerings

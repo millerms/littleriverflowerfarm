@@ -54,13 +54,35 @@
 .quote-nav-btn { display:flex; align-items:center; justify-content:center; width:42px; height:42px; border:1px solid #{'hsl(var(--glass-tint)/.28)'}; border-radius:50%; font-size:25px; line-height:1; padding:0; }
 
 /* Navigation & Masthead */
-.masthead,.masthead__inner-wrap,.site-header,.greedy-nav,.greedy-nav .hidden-links{
+.masthead {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.masthead__inner-wrap { padding: 0; }
+
+.masthead,
+.masthead__inner-wrap,
+.greedy-nav,
+.greedy-nav .hidden-links {
   -webkit-backdrop-filter: blur(4px) saturate(120%);
   backdrop-filter: blur(4px) saturate(120%);
-  background-color: hsla(221, 66%, 24%, 0.12) !important;
-  border-bottom: 1px solid #{'hsl(var(--glass-tint-blue) / .28)'};
-  box-shadow: 0 8px 26px rgba(0,0,0,.28);
+  background-color: hsla(221, 66%, 24%, 0.12);
+  border-bottom: 1px solid hsl(var(--glass-tint-blue) / 0.28);
+  box-shadow: 0 8px 26px rgba(0,0,0,0.28);
 }
+
+.masthead__logo {
+  height: 96px;
+  width: auto;
+  max-width: 260px;
+  vertical-align: middle;
+  padding-left: 25px;
+}
+
+.masthead-spacer { height: 96px; }
 
 /* Footer (Glassy Forest Green) */
 .page__footer{ position:relative; overflow:hidden; -webkit-backdrop-filter: blur(var(--blur-lg)) saturate(85%); backdrop-filter: blur(var(--blur-lg)) saturate(85%); background-color: #{'hsl(var(--glass-tint-green) / .86)'}; border-top: 1px solid #{'hsl(var(--glass-tint-green) / .86)'}; box-shadow: 0 -8px 26px rgba(0,0,0,.30); color: #FFF8ED; }

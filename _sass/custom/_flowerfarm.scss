@@ -42,6 +42,23 @@
   margin-top: 1.25rem;
 }
 
+.lr-about-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: clamp(1rem, 3vw, 2rem);
+  margin: clamp(1.5rem, 3vw, 2.5rem) 0;
+}
+
+.lr-about-grid figure { margin: 0; }
+
+.lr-about-grid img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: var(--r-md);
+  box-shadow: 0 12px 26px rgba(0,0,0,.1);
+}
+
 .lr-feature-grid .card__media { aspect-ratio: 4 / 3; }
 
 .lr-stand-details {
@@ -85,18 +102,17 @@
   border-radius: var(--r-lg);
   padding: clamp(1.5rem, 3vw, 2.5rem);
   box-shadow: 0 12px 28px rgba(0,0,0,.08);
+  width: 100%;
 }
 
 .testimonial {
   margin: 0;
-  opacity: 0;
-  transform: translateY(8px);
-  transition: opacity var(--t-med) var(--e-out), transform var(--t-med) var(--e-out);
+  display: none;
 }
 
 .testimonial.is-active {
-  opacity: 1;
-  transform: translateY(0);
+  display: block;
+  animation: fadeInSlide .6s var(--e-soft) both;
 }
 
 .testimonial blockquote {

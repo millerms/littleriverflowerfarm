@@ -5,44 +5,33 @@
 // ==============================================
 
 /* Header/nav extras & textures */
-.greedy-nav { background: transparent !important; box-shadow: none !important; border-radius: 0 !important; padding: 0 !important; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.08); backdrop-filter: blur(6px); }
-.greedy-nav .inner-wrap { padding: 0 !important; margin: 0 auto; }
+.greedy-nav {
+  background: transparent !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  flex-wrap: nowrap;
+}
+
 .greedy-nav a {
-  color: var(--c-link);
-  font-weight:600;
-  letter-spacing:.5px;
-  /* Reduce halo that can look blurry over frosted backgrounds */
+  color: #ffffff;
+  font-weight: 600;
+  letter-spacing: 0.5px;
   text-shadow: none;
+  white-space: nowrap;
 }
 
-/* Dropdown (hidden-links) base color: softer gray for readability */
-.greedy-nav .hidden-links a {
-  color: var(--c-link) !important;
-  text-shadow: none;
-}
+.greedy-nav .visible-links { flex-wrap: nowrap; }
 
-/* Make dropdown background more opaque for readability on mobile */
 .greedy-nav .hidden-links {
-  background-color: var(--c-surface) !important;
+  background-color: hsla(221, 31%, 37%, 0.6);
   -webkit-backdrop-filter: blur(10px) saturate(140%);
   backdrop-filter: blur(10px) saturate(140%);
-  border: 1px solid var(--c-border);
-}
-
-/* Crisper hover/focus for masthead links */
-.greedy-nav a:hover,
-.greedy-nav a:focus-visible {
-  color: var(--c-link-hover) !important;
-  text-shadow: none !important; /* ensure no halo while hovered */
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-}
-.greedy-nav li::after { display:none; }
-.greedy-nav .menu-toggle { color: var(--c-link); }
-.greedy-nav .hidden-links a:hover {
-  background-color: color-mix(in srgb, var(--c-link) 12%, transparent);
-  color: var(--c-link-hover);
-  border-bottom: 2px solid var(--c-link-hover);
+  border: 1px solid rgba(0,0,0,0.25);
 }
 
 /* Meetings page: add RD ring next to hero title */

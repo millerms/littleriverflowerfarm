@@ -9,10 +9,6 @@
 /* Little River hero + masthead tweaks */
 @media (max-width: 900px) {
   .lr-hero { grid-template-columns: 1fr; }
-  .lr-nav { display: flex; flex-wrap: wrap; gap: .75rem; }
-  .lr-nav .site-logo { order: 1; width: 100%; display: flex; justify-content: center; }
-  .lr-nav .visible-links { order: 2; }
-  .masthead__actions { order: 3; margin-left: auto; }
 }
 
 @media (max-width: 640px) {

@@ -58,7 +58,7 @@ classes: full-width
 
 <section class="lr-section reveal">
   <div class="lr-testimonials" aria-live="polite">
-    <h2>Kind Words</h2>
+    <h2>testimonials</h2>
     <figure class="testimonial is-active" data-testimonial>
       <blockquote>
         <p>Everyone wants their wedding or special occasion to be unique. Having exquisite flowers done by Pat will make your event the way you envisioned it. She listens to your needs and small details. Drawing on flowers, some of which are from her own garden, your vision will become a reality with her artistic talent. Whether it be an arrangement for a special friend, a shower, or a large wedding, you will be overjoyed.</p>
