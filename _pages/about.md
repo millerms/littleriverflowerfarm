@@ -9,13 +9,13 @@ classes: full-width
 
 The Little River Flower Farm began with a simple love for growing things. What started as a small garden has flourished into a thriving flower farm and design studio, where every stem is nurtured with care and creativity.
 
-<figure class="lr-figure lr-figure--left reveal">
-  <img src="/assets/images/squarespace/8F53018D-BA3F-4F1D-9EE7-FE4DB3CA7D3E.jpg" alt="Pat Miller among her blooms.">
-</figure>
-
 I am a Master Gardener with over 30 years of experience, and flowers have always been my way of connecting with nature and people. There is something special about locally grown, seasonal blooms — the way they capture the beauty of a moment, the changing seasons, and the natural rhythms of Connecticut's landscape.
 
 At Little River, I focus on sustainable and organic growing practices, ensuring that every bouquet and arrangement is not just beautiful but also kind to the earth. I believe flowers should be fresh, vibrant, and full of life, just as they are in the garden. That is why I harvest at peak bloom, creating lush, garden-inspired designs that feel as natural as they do elegant.
+
+<figure class="lr-figure lr-figure--left reveal">
+  <img src="/assets/images/squarespace/8F53018D-BA3F-4F1D-9EE7-FE4DB3CA7D3E.jpg" alt="Pat Miller among her blooms.">
+</figure>
 
 ## Our Offerings
 
@@ -26,7 +26,7 @@ Whether you are planning a wedding, an intimate gathering, or simply want to bri
 - DIY Buckets: For creative souls who want to arrange their own flowers, I offer buckets of farm-fresh blooms for any occasion.
 
 <figure class="lr-figure lr-figure--right reveal">
-  <img src="/assets/images/squarespace/IMG_4303-EFFECTS.jpg" alt="Flower gardens at The Little River Flower Farm.">
+  <img src="assets/images/squarespace/IMG_430.jpg" alt="Flower gardens at The Little River Flower Farm.">
 </figure>
 
 ## Bringing Flowers to Life

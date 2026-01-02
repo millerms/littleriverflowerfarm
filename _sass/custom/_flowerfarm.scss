@@ -59,7 +59,7 @@
 
 .lr-figure {
   margin: clamp(1.25rem, 3vw, 2rem) 0;
-  max-width: 520px;
+  max-width: 600px;
 }
 
 .lr-figure--left { margin-right: auto; }
@@ -94,8 +94,8 @@
 
 .lr-gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: .75rem;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: .85rem;
 }
 
 .lr-gallery__item {
