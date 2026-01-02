@@ -6,7 +6,7 @@ classes: full-width
 ---
 
 <section class="lr-hero reveal">
-  <h1 class="lr-hero__title">An organic cut flower farm providing sustainable floristry services.</h1>
+  <h1 class="lr-hero__title lr-hero__content--center">An organic cut flower farm providing sustainable floristry services.</h1>
   <div class="lr-hero__media">
     <img src="{{ '/assets/images/squarespace/GayleBrooker_GB_02895_.jpg' | relative_url }}" alt="Garden-style bridal bouquet with blush and burgundy blooms.">
   </div>
