@@ -4,6 +4,12 @@ title: "Floral Design Work"
 permalink: /floral-design/
 classes: full-width
 ---
+<section class="lr-hero reveal">
+  <div class="lr-hero__content">
+    <h1 class="lr-hero__title">Floral Design Work</h1>
+    <p class="lr-hero__subhead">Nurturing flowers from seed or bulb into beautiful cut flowers and arrangements.</p>
+  </div>
+</section>
 
 <section class="lr-intro reveal">
   <p><strong>Bespoke, garden-inspired floral design</strong> for weddings, events, and home decor.</p>

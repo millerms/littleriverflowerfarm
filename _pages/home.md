@@ -6,12 +6,12 @@ classes: full-width
 ---
 
 <section class="lr-hero reveal">
+  <h1 class="lr-hero__title">An organic cut flower farm providing sustainable floristry services.</h1>
   <div class="lr-hero__media">
     <img src="/assets/images/squarespace/GayleBrooker_GB_02895_.jpg" alt="Garden-style bridal bouquet with blush and burgundy blooms.">
   </div>
   <div class="lr-hero__content">
-    <h1 class="lr-hero__title">An organic cut flower farm providing sustainable floristry services.</h1>
-    <p class="lr-hero__subhead">Nurturing flowers from seed or bulb into beautiful cut flowers and arrangements.</p>
+    <h1 class="lr-hero__title">Nurturing flowers from seed or bulb into beautiful cut flowers and arrangements.</h1>
     <p class="lr-hero__subhead">Bringing our lush gardens to your event.</p>
     <div class="lr-hero__actions">
       <a class="btn-modern" href="/about/#contact">Contact</a>
@@ -21,7 +21,6 @@ classes: full-width
 </section>
 
 <section class="lr-section reveal">
-  <h2>Featured Florals</h2>
   <div class="card-grid lr-feature-grid">
     <article class="card">
       <div class="card__media">
@@ -43,7 +42,7 @@ classes: full-width
 
 <section class="lr-section reveal">
   <div class="lr-stand-details">
-    <h2>Weekend Flower Stand</h2>
+    <h2>Seasonal Flower Stand</h2>
     <p>Open weekends for bouquet sales during the growing season (late June through October). Cut flower orders are taken and fulfilled seven days per week.</p>
     <ul>
       <li>Grab-and-go bouquets sized for car cup holders: $10.</li>
@@ -84,7 +83,7 @@ classes: full-width
   <h2>Ready to plan your florals?</h2>
   <p>Browse the floral design portfolio and reach out to start planning your celebration.</p>
   <div class="lr-hero__actions">
-    <a class="btn-modern" href="/floral-design/">View Floral Design Work</a>
+    <a class="btn-modern btn-modern--outline" href="/floral-design/">View Floral Design Work</a>
     <a class="btn-modern btn-modern--outline" href="/about/#contact">Contact</a>
   </div>
 </section>

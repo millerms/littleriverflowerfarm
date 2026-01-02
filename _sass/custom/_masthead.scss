@@ -2,20 +2,26 @@
 // 🧭 Masthead helpers
 // ==============================================
 
-.masthead__cta {
-  margin-left: auto;
+.masthead__menu-item--cta .masthead__cta {
   text-transform: lowercase;
   letter-spacing: .04em;
   font-weight: 600;
   padding: .5em 1.35em;
-  flex-shrink: 0;
   box-shadow: none;
   font-family: Georgia, "Times New Roman", serif;
+  margin: 0 .5rem;
+  white-space: nowrap;
 }
 
-.masthead__cta.btn-modern--outline {
+.masthead__menu-item--cta .masthead__cta.btn-modern--outline {
   background: transparent;
   box-shadow: none;
 }
 
-.masthead__cta::after { display: none; }
+.masthead__menu-item--cta {
+  display: flex;
+  align-items: center;
+}
+
+.greedy-nav .masthead__menu-item--cta .masthead__cta::before,
+.greedy-nav .masthead__menu-item--cta .masthead__cta::after { display: none; }

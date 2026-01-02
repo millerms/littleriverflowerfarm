@@ -1,10 +1,10 @@
 # main links
 main:
-  - title: "About"
+  - title: "about"
     url: /about/
-  - title: "Floral Design Work"
+  - title: "floral design work"
     url: /floral-design/
-  - title: "Flower Stand"
+  - title: "flower stand"
     url: /flower-stand/
-  - title: "FAQs"
+  - title: "faqs"
     url: /faq/

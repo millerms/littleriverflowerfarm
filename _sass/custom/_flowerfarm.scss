@@ -40,6 +40,7 @@
   flex-wrap: wrap;
   gap: .75rem;
   margin-top: 1.25rem;
+  justify-content: center;
 }
 
 .lr-intro {
@@ -62,8 +63,18 @@
   max-width: 600px;
 }
 
+.lr-figure--center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .lr-figure--left { margin-right: auto; }
 .lr-figure--right { margin-left: auto; }
+
+.lr-figure--compact {
+  width: 60%;
+  max-width: 60%;
+}
 
 .lr-figure img {
   width: 100%;
@@ -75,6 +86,10 @@
 
 @media (max-width: 720px) {
   .lr-figure { max-width: 100%; }
+  .lr-figure--compact {
+    width: 100%;
+    max-width: 100%;
+  }
 }
 
 .lr-feature-grid .card__media { aspect-ratio: 4 / 3; }
@@ -183,6 +198,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: .75rem;
+  justify-content: center;
 }
 
 .lr-map {

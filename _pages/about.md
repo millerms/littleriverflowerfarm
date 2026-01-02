@@ -13,7 +13,7 @@ I am a Master Gardener with over 30 years of experience, and flowers have always
 
 At Little River, I focus on sustainable and organic growing practices, ensuring that every bouquet and arrangement is not just beautiful but also kind to the earth. I believe flowers should be fresh, vibrant, and full of life, just as they are in the garden. That is why I harvest at peak bloom, creating lush, garden-inspired designs that feel as natural as they do elegant.
 
-<figure class="lr-figure lr-figure--left reveal">
+<figure class="lr-figure lr-figure--center reveal">
   <img src="/assets/images/squarespace/8F53018D-BA3F-4F1D-9EE7-FE4DB3CA7D3E.jpg" alt="Pat Miller among her blooms.">
 </figure>
 
@@ -25,8 +25,8 @@ Whether you are planning a wedding, an intimate gathering, or simply want to bri
 - Seasonal Arrangements: Fresh-cut bouquets featuring the best blooms of the season.
 - DIY Buckets: For creative souls who want to arrange their own flowers, I offer buckets of farm-fresh blooms for any occasion.
 
-<figure class="lr-figure lr-figure--right reveal">
-  <img src="assets/images/squarespace/IMG_430.jpg" alt="Flower gardens at The Little River Flower Farm.">
+<figure class="lr-figure lr-figure--center reveal">
+  <img src="/assets/images/squarespace/IMG_430.jpg" alt="Flower gardens at The Little River Flower Farm.">
 </figure>
 
 ## Bringing Flowers to Life
@@ -52,7 +52,7 @@ Beyond floral design, I love sharing my passion for flowers with others. Whether
     <textarea id="contact-message" name="message" required></textarea>
 
     <div class="lr-contact__actions">
-      <button class="btn-modern" type="submit">Send Email</button>
+      <button class="btn-modern btn-modern--outline" type="submit">Send Email</button>
       <a class="btn-modern btn-modern--outline" href="/floral-design/">Floral Design Work</a>
     </div>
   </form>

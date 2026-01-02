@@ -59,6 +59,7 @@
   top: 0;
   width: 100%;
   z-index: 999;
+  --masthead-height: clamp(64px, 10vw, 96px);
 }
 
 .masthead__inner-wrap { padding: 0; }
@@ -75,14 +76,14 @@
 }
 
 .masthead__logo {
-  height: 96px;
+  height: var(--masthead-height);
   width: auto;
   max-width: 260px;
   vertical-align: middle;
-  padding-left: 25px;
+  padding-left: clamp(12px, 2vw, 25px);
 }
 
-.masthead-spacer { height: 96px; }
+.masthead-spacer { height: calc(var(--masthead-height) + 1rem); }
 
 /* Footer (Glassy Forest Green) */
 .page__footer{ position:relative; overflow:hidden; -webkit-backdrop-filter: blur(var(--blur-lg)) saturate(85%); backdrop-filter: blur(var(--blur-lg)) saturate(85%); background-color: #{'hsl(var(--glass-tint-green) / .86)'}; border-top: 1px solid #{'hsl(var(--glass-tint-green) / .86)'}; box-shadow: 0 -8px 26px rgba(0,0,0,.30); color: #FFF8ED; }

@@ -15,23 +15,32 @@
   -webkit-backdrop-filter: blur(6px);
   backdrop-filter: blur(6px);
   flex-wrap: nowrap;
+  min-width: 0;
 }
 
 .greedy-nav a {
-  color: #ffffff;
+  color: var(--c-link);
   font-weight: 600;
   letter-spacing: 0.5px;
   text-shadow: none;
   white-space: nowrap;
 }
 
-.greedy-nav .visible-links { flex-wrap: nowrap; }
+.greedy-nav .visible-links {
+  flex-wrap: nowrap;
+  min-width: 0;
+}
 
 .greedy-nav .hidden-links {
   background-color: hsla(221, 31%, 37%, 0.6);
   -webkit-backdrop-filter: blur(10px) saturate(140%);
   backdrop-filter: blur(10px) saturate(140%);
   border: 1px solid rgba(0,0,0,0.25);
+}
+
+.greedy-nav__toggle,
+.greedy-nav .search__toggle {
+  flex-shrink: 0;
 }
 
 /* Meetings page: add RD ring next to hero title */

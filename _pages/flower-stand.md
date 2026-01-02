@@ -4,13 +4,17 @@ title: "Flower Stand"
 permalink: /flower-stand/
 classes: full-width
 ---
-
-Open weekends for bouquet sales during the growing season (late June through October). Cut flower orders are taken and fulfilled seven days per week.
+<figure class="lr-figure lr-figure--center lr-figure--compact reveal">
+  <img src="/assets/images/flowerstand/IMG_0509.jpg" alt="Grab-and-go bouquet at the flower stand.">
+</figure>
 
 <section class="lr-section reveal">
   <div class="lr-stand-details">
-    <h2>Flower Stand Details</h2>
+    <h2>Seasonal Flower Stand</h2>
+    <p>Open weekends for bouquet sales during the growing season (late June through October). Cut flower orders are taken and fulfilled seven days per week.</p>
+    <h3>Details</h3>
     <ul>
+      <li>Pre-order bouquets available for pickup.</li>
       <li>Grab-and-go bouquets sized for car cup holders: $10.</li>
       <li>Cash or Venmo accepted.</li>
       <li>4 Old Field Lane, Redding, CT.</li>
@@ -22,9 +26,6 @@ Open weekends for bouquet sales during the growing season (late June through Oct
 <section class="lr-section reveal">
   <h2>Seasonal Favorites</h2>
   <div class="lr-gallery">
-    <figure class="lr-gallery__item">
-      <img src="/assets/images/flowerstand/IMG_0509.jpg" alt="Grab-and-go bouquet at the flower stand.">
-    </figure>
     <figure class="lr-gallery__item">
       <img src="/assets/images/flowerstand/IMG_0992.jpg" alt="Seasonal bouquet wrapped for pickup.">
     </figure>
