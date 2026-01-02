@@ -35,7 +35,6 @@ Beyond floral design, I love sharing my passion for flowers with others. Whether
 
 <div class="lr-hero__actions reveal">
   <a class="btn-modern btn-modern--ghost" href="{{ '/floral-design/' | relative_url }}">See My Work</a>
-  <a class="btn-modern btn-modern--ghost" href="#contact">Contact</a>
 </div>
 
 <section class="lr-contact reveal" id="contact">
