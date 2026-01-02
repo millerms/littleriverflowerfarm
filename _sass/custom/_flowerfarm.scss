@@ -4,6 +4,45 @@
 
 .lr-section { margin: clamp(2rem, 4vw, 3.5rem) 0; }
 
+.lr-page-hero {
+  position: relative;
+  min-height: clamp(240px, 42vw, 420px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: clamp(2.5rem, 6vw, 4rem) 1.5rem;
+  margin: 0 0 2.5rem;
+  color: #ffffff;
+  background: var(--hero-image) center / cover no-repeat;
+  border-radius: var(--r-lg);
+  overflow: hidden;
+}
+
+.lr-page-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(55,61,66,.18), rgba(55,61,66,.35));
+}
+
+.lr-page-hero__title {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 3rem);
+  letter-spacing: .03em;
+  font-weight: 500;
+  text-transform: lowercase;
+}
+
+.lr-page-hero--full {
+  width: 100vw;
+  margin: 0 calc(50% - 50vw) 2.5rem;
+  transform: none;
+  border-radius: 0;
+}
+
 .lr-hero {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
@@ -41,6 +80,10 @@
   gap: .75rem;
   margin-top: 1.25rem;
   justify-content: center;
+}
+
+.lr-hero__actions--spaced {
+  gap: 1.1rem;
 }
 
 .lr-intro {

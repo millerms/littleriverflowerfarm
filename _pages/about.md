@@ -33,7 +33,7 @@ Whether you are planning a wedding, an intimate gathering, or simply want to bri
 
 Beyond floral design, I love sharing my passion for flowers with others. Whether it is through local workshops, community events, or just chatting with visitors at the farm, I believe flowers have a way of bringing people together.
 
-<div class="lr-hero__actions reveal">
+<div class="lr-hero__actions lr-hero__actions--spaced reveal">
   <a class="btn-modern btn-modern--ghost" href="{{ '/floral-design/' | relative_url }}">See My Work</a>
 </div>
 

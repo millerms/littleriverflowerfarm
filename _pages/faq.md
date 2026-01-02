@@ -4,10 +4,9 @@ title: "FAQs"
 permalink: /faq/
 classes: full-width
 ---
-
-<figure class="lr-figure lr-figure--center lr-figure--compact reveal">
-  <img src="{{ '/assets/images/squarespace/B7F91EB7-707A-43A8-978E-0516907612B4.jpeg' | relative_url }}" alt="Pumpkins on a bench in the garden.">
-</figure>
+<section class="lr-page-hero lr-page-hero--full reveal" style="--hero-image: url('{{ '/assets/images/squarespace/unsplash-image-B_SLtmXPKNA.jpg' | relative_url }}');">
+  <h1 class="lr-page-hero__title">Frequently asked questions</h1>
+</section>
 
 <details class="accordion">
   <summary>What flowers do you grow at The Little River Flower Farm?</summary>

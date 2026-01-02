@@ -21,22 +21,19 @@ classes: full-width
 </section>
 
 <section class="lr-section reveal">
-  <div class="card-grid lr-feature-grid">
-    <article class="card">
-      <div class="card__media">
+  <div class="lr-gallery">
+    <figure class="lr-gallery__item">
         <img src="assets/images/squarespace/1-GayleBrooker_GB_03757_.jpg" alt="Wedding bouquet with soft seasonal florals.">
-      </div>
-    </article>
-    <article class="card">
-      <div class="card__media">
+    </figure>
+    <figure class="lr-gallery__item">
         <img src="assets/images/squarespace/2-IMG_7359.jpeg" alt="Lush centerpiece with garden-inspired blooms.">
-      </div>
-    </article>
-    <article class="card">
-      <div class="card__media">
+    </figure>
+    <figure class="lr-gallery__item">
         <img src="assets/images/squarespace/F4675445-C758-4187-97D5-A13C08EE5E51_1_201_a.jpeg" alt="Flower with butterfly perched on inside.">
-      </div>
-    </article>
+    </figure>
+        <figure class="lr-gallery__item">
+        <img src="assets/images/squarespace/1-IMG_1487.jpeg" alt="Dhalia bloom on table.">
+    </figure>
   </div>
 </section>
 

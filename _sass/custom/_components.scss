@@ -59,7 +59,7 @@
   top: 0;
   width: 100%;
   z-index: 999;
-  --masthead-height: clamp(64px, 10vw, 96px);
+  --masthead-height: clamp(70px, 11vw, 106px);
 }
 
 .masthead__inner-wrap { padding: 0; }
@@ -78,7 +78,7 @@
 .masthead__logo {
   height: var(--masthead-height);
   width: auto;
-  max-width: 260px;
+  max-width: 325px;
   vertical-align: middle;
   padding-left: clamp(12px, 2vw, 25px);
 }
