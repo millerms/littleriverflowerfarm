@@ -4,7 +4,7 @@
   if (!items.length) return;
 
   var index = 0;
-  var intervalMs = 9000;
+  var intervalMs = 12000;
 
   function show(next) {
     items[index].classList.remove('is-active');

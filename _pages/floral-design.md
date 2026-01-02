@@ -38,6 +38,8 @@ classes: full-width
   </div>
 </section>
 
+---
+
 <section class="lr-section reveal">
   <h2>Custom Bouquets and Floral Arrangements - Locally Grown in Connecticut</h2>
   <div class="lr-gallery">
@@ -49,6 +51,8 @@ classes: full-width
   </div>
 </section>
 
+---
+
 <section class="lr-section reveal">
   <h2>Fresh-Cut Seasonal Flowers from Our Connecticut Flower Farm</h2>
   <div class="lr-gallery">
@@ -59,6 +63,8 @@ classes: full-width
     {% endfor %}
   </div>
 </section>
+
+---
 
 <section class="lr-contact reveal" id="contact">
   <h2>Contact</h2>

@@ -20,6 +20,8 @@ classes: full-width
   </div>
 </section>
 
+---
+
 <section class="lr-section reveal">
   <div class="lr-gallery">
     <figure class="lr-gallery__item">
@@ -30,6 +32,8 @@ classes: full-width
     </figure>
   </div>
 </section>
+
+---
 
 <section class="lr-section reveal">
   <div class="lr-stand-details">
@@ -45,6 +49,9 @@ classes: full-width
     </div>
   </div>
 </section>
+
+---
+
 <section class="lr-section reveal">
   <div class="lr-gallery">
     <figure class="lr-gallery__item">
@@ -55,6 +62,8 @@ classes: full-width
     </figure>
   </div>
 </section>
+
+---
 
 <section class="lr-section reveal">
   <div class="lr-testimonials" aria-live="polite">
