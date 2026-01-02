@@ -9,7 +9,7 @@ classes: full-width
 
 <section class="lr-section reveal">
   <div class="lr-stand-details">
-    <h2>Seasonal Flower Stand</h2>
+    <h1 class="lr-hero__title lr-hero__content--center">Seasonal Flower Stand</h1>
     <p>Open weekends for bouquet sales during the growing season (late June through October). Cut flower orders are taken and fulfilled seven days per week.</p>
     <h3>Details</h3>
     <ul>

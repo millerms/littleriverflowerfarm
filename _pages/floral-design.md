@@ -4,14 +4,8 @@ title: "Floral Design Work"
 permalink: /floral-design/
 classes: full-width
 ---
-<section class="lr-hero reveal">
-  <div class="lr-hero__content">
-    <h1 class="lr-hero__title">Floral Design Work</h1>
-    <p class="lr-hero__subhead">Nurturing flowers from seed or bulb into beautiful cut flowers and arrangements.</p>
-  </div>
-</section>
-
 <section class="lr-intro reveal">
+  <h1 class="lr-hero__title">Floral Design Work</h1>
   <p><strong>Bespoke, garden-inspired floral design</strong> for weddings, events, and home decor.</p>
   <p>I create lush, seasonal floral arrangements and custom installations for weddings, events, and home styling. My floral designs are inspired by nature and crafted with care, bringing a fresh, organic feel to every setting.</p>
   <p>During the growing season, I incorporate fresh-cut flowers from my Connecticut flower farm, ensuring your arrangements are as vibrant and natural as possible. When needed, I also source locally and sustainably to support eco-friendly floral design.</p>
