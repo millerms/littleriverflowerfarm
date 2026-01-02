@@ -6,7 +6,7 @@ minimal_mistakes_skin: ""
 title: "The Little River Flower Farm"
 description: "Organic cut flower farm and floristry studio in Redding, Connecticut."
 url: "https://millerms.github.io"
-baseurl: ""
+baseurl: "/littleriverflowerfarm"
 locale: en-US
 og_image: 
 logo: /assets/images/littleriverflowerfarm_logo.webp

@@ -45,7 +45,7 @@
 
 /* Meetings page: add RD ring next to hero title */
 .meetings-page .page__hero--overlay .page__title { display: inline-flex; align-items: center; gap: .6rem; }
-.meetings-page .page__hero--overlay .page__title::before { content:""; width:55px; height:55px; background: url('/assets/images/rd-icons/rd-black-ring.webp') center / contain no-repeat; display:inline-block; }
+.meetings-page .page__hero--overlay .page__title::before { content:""; width:55px; height:55px; background: url('../images/rd-icons/rd-black-ring.webp') center / contain no-repeat; display:inline-block; }
 
 /* Hamburger Toggle (Navicon) */
 .greedy-nav__toggle .navicon { position: relative; width: 1.5rem; height: 0.25rem; background: var(--c-link); margin: auto; transition: 0.3s ease-in-out; }

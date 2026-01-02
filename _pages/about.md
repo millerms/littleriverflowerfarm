@@ -14,7 +14,7 @@ I am a Master Gardener with over 30 years of experience, and flowers have always
 At Little River, I focus on sustainable and organic growing practices, ensuring that every bouquet and arrangement is not just beautiful but also kind to the earth. I believe flowers should be fresh, vibrant, and full of life, just as they are in the garden. That is why I harvest at peak bloom, creating lush, garden-inspired designs that feel as natural as they do elegant.
 
 <figure class="lr-figure lr-figure--center reveal">
-  <img src="/assets/images/squarespace/8F53018D-BA3F-4F1D-9EE7-FE4DB3CA7D3E.jpg" alt="Pat Miller among her blooms.">
+  <img src="{{ '/assets/images/squarespace/8F53018D-BA3F-4F1D-9EE7-FE4DB3CA7D3E.jpg' | relative_url }}" alt="Pat Miller among her blooms.">
 </figure>
 
 ## Our Offerings
@@ -26,7 +26,7 @@ Whether you are planning a wedding, an intimate gathering, or simply want to bri
 - DIY Buckets: For creative souls who want to arrange their own flowers, I offer buckets of farm-fresh blooms for any occasion.
 
 <figure class="lr-figure lr-figure--center reveal">
-  <img src="/assets/images/squarespace/IMG_430.jpg" alt="Flower gardens at The Little River Flower Farm.">
+  <img src="{{ '/assets/images/squarespace/IMG_430.jpg' | relative_url }}" alt="Flower gardens at The Little River Flower Farm.">
 </figure>
 
 ## Bringing Flowers to Life
@@ -34,8 +34,8 @@ Whether you are planning a wedding, an intimate gathering, or simply want to bri
 Beyond floral design, I love sharing my passion for flowers with others. Whether it is through local workshops, community events, or just chatting with visitors at the farm, I believe flowers have a way of bringing people together.
 
 <div class="lr-hero__actions reveal">
-  <a class="btn-modern" href="/floral-design/">See My Work</a>
-  <a class="btn-modern btn-modern--outline" href="#contact">Contact</a>
+  <a class="btn-modern btn-modern--ghost" href="{{ '/floral-design/' | relative_url }}">See My Work</a>
+  <a class="btn-modern btn-modern--ghost" href="#contact">Contact</a>
 </div>
 
 <section class="lr-contact reveal" id="contact">
@@ -52,8 +52,8 @@ Beyond floral design, I love sharing my passion for flowers with others. Whether
     <textarea id="contact-message" name="message" required></textarea>
 
     <div class="lr-contact__actions">
-      <button class="btn-modern btn-modern--outline" type="submit">Send Email</button>
-      <a class="btn-modern btn-modern--outline" href="/floral-design/">Floral Design Work</a>
+      <button class="btn-modern btn-modern--ghost" type="submit">Send Email</button>
+      <a class="btn-modern btn-modern--ghost" href="{{ '/floral-design/' | relative_url }}">Floral Design Work</a>
     </div>
   </form>
 </section>

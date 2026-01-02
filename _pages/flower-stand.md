@@ -5,7 +5,7 @@ permalink: /flower-stand/
 classes: full-width
 ---
 <figure class="lr-figure lr-figure--center lr-figure--compact reveal">
-  <img src="/assets/images/flowerstand/IMG_0509.jpg" alt="Grab-and-go bouquet at the flower stand.">
+  <img src="{{ '/assets/images/flowerstand/IMG_0509.jpg' | relative_url }}" alt="Grab-and-go bouquet at the flower stand.">
 </figure>
 
 <section class="lr-section reveal">
@@ -27,13 +27,13 @@ classes: full-width
   <h2>Seasonal Favorites</h2>
   <div class="lr-gallery">
     <figure class="lr-gallery__item">
-      <img src="/assets/images/flowerstand/IMG_0992.jpg" alt="Seasonal bouquet wrapped for pickup.">
+      <img src="{{ '/assets/images/flowerstand/IMG_0992.jpg' | relative_url }}" alt="Seasonal bouquet wrapped for pickup.">
     </figure>
     <figure class="lr-gallery__item">
-      <img src="/assets/images/flowerstand/IMG_1091.jpg" alt="Buckets of fresh-cut flowers at the stand.">
+      <img src="{{ '/assets/images/flowerstand/IMG_1091.jpg' | relative_url }}" alt="Buckets of fresh-cut flowers at the stand.">
     </figure>
     <figure class="lr-gallery__item">
-      <img src="/assets/images/flowerstand/IMG_1147.jpg" alt="Fresh blooms available for weekend sales.">
+      <img src="{{ '/assets/images/flowerstand/IMG_1147.jpg' | relative_url }}" alt="Fresh blooms available for weekend sales.">
     </figure>
   </div>
 </section>

@@ -6,7 +6,7 @@ classes: full-width
 ---
 
 <figure class="lr-figure lr-figure--center lr-figure--compact reveal">
-  <img src="/assets/images/squarespace/B7F91EB7-707A-43A8-978E-0516907612B4.jpeg" alt="Pumpkins on a bench in the garden.">
+  <img src="{{ '/assets/images/squarespace/B7F91EB7-707A-43A8-978E-0516907612B4.jpeg' | relative_url }}" alt="Pumpkins on a bench in the garden.">
 </figure>
 
 <details class="accordion">
