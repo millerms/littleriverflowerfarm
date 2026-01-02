@@ -26,7 +26,7 @@ Whether you are planning a wedding, an intimate gathering, or simply want to bri
 - DIY Buckets: For creative souls who want to arrange their own flowers, I offer buckets of farm-fresh blooms for any occasion.
 
 <figure class="lr-figure lr-figure--center reveal">
-  <img src="{{ '/assets/images/squarespace/IMG_430.jpg' | relative_url }}" alt="Flower gardens at The Little River Flower Farm.">
+  <img src="{{ 'assets/images/squarespace/3-IMG_1541.jpeg' | relative_url }}" alt="Flower gardens at The Little River Flower Farm.">
 </figure>
 
 ## Bringing Flowers to Life
