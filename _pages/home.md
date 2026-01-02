@@ -14,8 +14,8 @@ classes: full-width
     <h1 class="lr-hero__title">Nurturing flowers from seed or bulb into beautiful cut flowers and arrangements.</h1>
     <p class="lr-hero__subhead">Bringing our lush gardens to your event.</p>
     <div class="lr-hero__actions">
-      <a class="btn-modern btn-modern--ghost" href="{{ '/about/#contact' | relative_url }}">Contact</a>
-      <a class="btn-modern btn-modern--ghost" href="{{ '/floral-design/' | relative_url }}">Floral Design Work</a>
+      <a class="btn-modern btn-modern--ghost" href="{{ '/about/#contact' | relative_url }}">contact</a>
+      <a class="btn-modern btn-modern--ghost" href="{{ '/floral-design/' | relative_url }}">floral design work</a>
     </div>
   </div>
 </section>
@@ -45,7 +45,7 @@ classes: full-width
       <li>4 Old Field Lane, Redding, CT.</li>
     </ul>
     <div class="lr-hero__actions">
-      <a class="btn-modern btn-modern--ghost" href="{{ '/flower-stand/' | relative_url }}">Flower Stand Details</a>
+      <a class="btn-modern btn-modern--ghost" href="{{ '/flower-stand/' | relative_url }}">flower stand details</a>
     </div>
   </div>
 </section>
@@ -93,7 +93,7 @@ classes: full-width
   <h2>Ready to plan your florals?</h2>
   <p>Browse the floral design portfolio and reach out to start planning your celebration.</p>
   <div class="lr-hero__actions">
-    <a class="btn-modern btn-modern--ghost" href="{{ '/floral-design/' | relative_url }}">View Floral Design Work</a>
-    <a class="btn-modern btn-modern--ghost" href="{{ '/about/#contact' | relative_url }}">Contact</a>
+    <a class="btn-modern btn-modern--ghost" href="{{ '/floral-design/' | relative_url }}">view floral design work</a>
+    <a class="btn-modern btn-modern--ghost" href="{{ '/about/#contact' | relative_url }}">contact</a>
   </div>
 </section>

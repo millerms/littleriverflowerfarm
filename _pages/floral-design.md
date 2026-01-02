@@ -74,8 +74,8 @@ classes: full-width
     <textarea id="floral-message" name="message" required></textarea>
 
     <div class="lr-contact__actions">
-      <button class="btn-modern" type="submit">Send Email</button>
-      <a class="btn-modern btn-modern--ghost" href="{{ '/about/' | relative_url }}">About the Farm</a>
+      <button class="btn-modern" type="submit">send email</button>
+      <a class="btn-modern btn-modern--ghost" href="{{ '/about/' | relative_url }}">about the farm</a>
     </div>
   </form>
 </section>

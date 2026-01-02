@@ -34,7 +34,7 @@ Whether you are planning a wedding, an intimate gathering, or simply want to bri
 Beyond floral design, I love sharing my passion for flowers with others. Whether it is through local workshops, community events, or just chatting with visitors at the farm, I believe flowers have a way of bringing people together.
 
 <div class="lr-hero__actions lr-hero__actions--spaced reveal">
-  <a class="btn-modern btn-modern--ghost" href="{{ '/floral-design/' | relative_url }}">See My Work</a>
+  <a class="btn-modern btn-modern--ghost" href="{{ '/floral-design/' | relative_url }}">see my work</a>
 </div>
 
 ---
@@ -53,8 +53,8 @@ Beyond floral design, I love sharing my passion for flowers with others. Whether
     <textarea id="contact-message" name="message" required></textarea>
 
     <div class="lr-contact__actions">
-      <button class="btn-modern btn-modern--ghost" type="submit">Send Email</button>
-      <a class="btn-modern btn-modern--ghost" href="{{ '/floral-design/' | relative_url }}">Floral Design Work</a>
+      <button class="btn-modern btn-modern--ghost" type="submit">send email</button>
+      <a class="btn-modern btn-modern--ghost" href="{{ '/floral-design/' | relative_url }}">floral design work</a>
     </div>
   </form>
 </section>
