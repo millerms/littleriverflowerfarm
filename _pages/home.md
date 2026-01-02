@@ -25,17 +25,17 @@ classes: full-width
   <div class="card-grid lr-feature-grid">
     <article class="card">
       <div class="card__media">
-        <img src="/assets/images/squarespace/GayleBrooker_GB_02010_.jpg" alt="Wedding tablescape with soft seasonal florals.">
+        <img src="assets/images/squarespace/1-GayleBrooker_GB_03757_.jpg" alt="Wedding bouquet with soft seasonal florals.">
       </div>
     </article>
     <article class="card">
       <div class="card__media">
-        <img src="/assets/images/squarespace/GayleBrooker_GB_03614_.jpg" alt="Lush centerpiece with garden-inspired blooms.">
+        <img src="assets/images/squarespace/2-IMG_7359.jpeg" alt="Lush centerpiece with garden-inspired blooms.">
       </div>
     </article>
     <article class="card">
       <div class="card__media">
-        <img src="/assets/images/squarespace/GayleBrooker_GB_03757_.jpg" alt="Romantic wedding florals in blush and green.">
+        <img src="assets/images/squarespace/F4675445-C758-4187-97D5-A13C08EE5E51_1_201_a.jpeg" alt="Flower with butterfly perched on inside.">
       </div>
     </article>
   </div>

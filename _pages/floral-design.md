@@ -5,27 +5,21 @@ permalink: /floral-design/
 classes: full-width
 ---
 
-Bespoke, garden-inspired floral design for weddings, events, and home decor.
-
-I create lush, seasonal floral arrangements and custom installations for weddings, events, and home styling. My floral designs are inspired by nature and crafted with care, bringing a fresh, organic feel to every setting.
-
-During the growing season, I incorporate fresh-cut flowers from my Connecticut flower farm, ensuring your arrangements are as vibrant and natural as possible. When needed, I also source locally and sustainably to support eco-friendly floral design.
-
-Let's bring your floral vision to life. Send me a message to start planning your custom arrangements.
-
-Photography credit: <a href="https://gaylebrooker.com/" rel="noopener">gaylebrooker.com</a>.
+<section class="lr-intro reveal">
+  <p><strong>Bespoke, garden-inspired floral design</strong> for weddings, events, and home decor.</p>
+  <p>I create lush, seasonal floral arrangements and custom installations for weddings, events, and home styling. My floral designs are inspired by nature and crafted with care, bringing a fresh, organic feel to every setting.</p>
+  <p>During the growing season, I incorporate fresh-cut flowers from my Connecticut flower farm, ensuring your arrangements are as vibrant and natural as possible. When needed, I also source locally and sustainably to support eco-friendly floral design.</p>
+  <p>Let's bring your floral vision to life. Send me a message to start planning your custom arrangements.</p>
+  <p class="lr-intro__credit">Photography credit: <a href="https://gaylebrooker.com/" rel="noopener">gaylebrooker.com</a>.</p>
+</section>
 
 {% assign all_images = site.static_files | where_exp: "file", "file.path contains '/assets/images/squarespace/'" %}
 {% assign jpg_images = all_images | where_exp: "file", "file.extname == '.jpg'" %}
 {% assign jpeg_images = all_images | where_exp: "file", "file.extname == '.jpeg'" %}
 {% assign all_images = jpg_images | concat: jpeg_images | sort: "path" %}
-{% assign total_images = all_images | size %}
-{% assign group_size = total_images | divided_by: 3 %}
-{% assign group_two_start = group_size | times: 1 %}
-{% assign group_three_start = group_size | times: 2 %}
-{% assign group_one = all_images | slice: 0, group_size %}
-{% assign group_two = all_images | slice: group_two_start, group_size %}
-{% assign group_three = all_images | slice: group_three_start, total_images %}
+{% assign group_one = all_images | where_exp: "file", "file.name contains '1-'" | sort: "path" %}
+{% assign group_two = all_images | where_exp: "file", "file.name contains '2-'" | sort: "path" %}
+{% assign group_three = all_images | where_exp: "file", "file.name contains '3-'" | sort: "path" %}
 
 <section class="lr-section reveal">
   <h2>Wedding and Event Floral Design in Connecticut</h2>
