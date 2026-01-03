@@ -7,7 +7,7 @@ classes: full-width
 
 <section class="lr-hero reveal">
   <h1 class="lr-hero__title lr-hero__content--center">An organic cut flower farm providing sustainable floristry services.</h1>
-  <div class="lr-hero__media">
+  <div class="lr-hero__media lr-hero__media--centered">
     <img src="{{ '/assets/images/squarespace/GayleBrooker_GB_02895_.jpg' | relative_url }}" alt="Garden-style bridal bouquet with blush and burgundy blooms.">
   </div>
   <div class="lr-hero__content lr-hero__content--center">
@@ -25,7 +25,7 @@ classes: full-width
 <section class="lr-section reveal">
   <div class="lr-gallery">
     <figure class="lr-gallery__item">
-        <img src="assets/images/squarespace/1-GayleBrooker_GB_03757_.jpg" alt="Wedding bouquet with soft seasonal florals.">
+        <img src="assets/images/squarespace/1-IMG_1487.jpeg" alt="Dhalia bloom on table.">
     </figure>
     <figure class="lr-gallery__item">
         <img src="assets/images/squarespace/2-IMG_7359.jpeg" alt="Lush centerpiece with garden-inspired blooms.">
@@ -55,10 +55,10 @@ classes: full-width
 <section class="lr-section reveal">
   <div class="lr-gallery">
     <figure class="lr-gallery__item">
-        <img src="assets/images/squarespace/F4675445-C758-4187-97D5-A13C08EE5E51_1_201_a.jpeg" alt="Flower with butterfly perched on inside.">
+        <img src="assets/images/squarespace/2-IMG_0830.jpg" alt="Dhaalia bouquet.">
     </figure>
-        <figure class="lr-gallery__item">
-        <img src="assets/images/squarespace/1-IMG_1487.jpeg" alt="Dhalia bloom on table.">
+    <figure class="lr-gallery__item">
+        <img src="assets/images/squarespace/1-GayleBrooker_GB_03757_.jpg" alt="Wedding bouquet with soft seasonal florals.">
     </figure>
   </div>
 </section>
