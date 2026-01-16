@@ -1,8 +1,9 @@
 ---
 layout: splash
-title: ""
+title: "The Little River Flower Farm"
 permalink: /
 classes: full-width
+excerpt: "Organic cut flower farm in Redding, Connecticut offering sustainable floristry, weddings, and a seasonal flower stand."
 ---
 
 <section class="lr-hero reveal">
@@ -11,7 +12,7 @@ classes: full-width
     <img src="{{ '/assets/images/squarespace/GayleBrooker_GB_02895_.jpg' | relative_url }}" alt="Garden-style bridal bouquet with blush and burgundy blooms.">
   </div>
   <div class="lr-hero__content lr-hero__content--center">
-    <h1 class="lr-hero__title">Nurturing flowers from seed or bulb into beautiful cut flowers and arrangements.</h1>
+    <h2 class="lr-hero__title">Nurturing flowers from seed or bulb into beautiful cut flowers and arrangements.</h2>
     <p class="lr-hero__subhead">Bringing our lush gardens to your event.</p>
     <div class="lr-hero__actions">
       <a class="btn-modern btn-modern--ghost" href="{{ '/about/#contact' | relative_url }}">contact</a>
@@ -25,10 +26,10 @@ classes: full-width
 <section class="lr-section reveal">
   <div class="lr-gallery">
     <figure class="lr-gallery__item">
-        <img src="assets/images/squarespace/1-IMG_1487.jpeg" alt="Dhalia bloom on table.">
+        <img src="{{ '/assets/images/squarespace/1-IMG_1487.jpeg' | relative_url }}" alt="Dhalia bloom on table.">
     </figure>
     <figure class="lr-gallery__item">
-        <img src="assets/images/squarespace/2-IMG_7359.jpeg" alt="Lush centerpiece with garden-inspired blooms.">
+        <img src="{{ '/assets/images/squarespace/2-IMG_7359.jpeg' | relative_url }}" alt="Lush centerpiece with garden-inspired blooms.">
     </figure>
   </div>
 </section>
@@ -55,10 +56,10 @@ classes: full-width
 <section class="lr-section reveal">
   <div class="lr-gallery">
     <figure class="lr-gallery__item">
-        <img src="assets/images/squarespace/2-IMG_0830.jpg" alt="Dhaalia bouquet.">
+        <img src="{{ '/assets/images/squarespace/2-IMG_0830.jpg' | relative_url }}" alt="Dhaalia bouquet.">
     </figure>
     <figure class="lr-gallery__item">
-        <img src="assets/images/squarespace/1-GayleBrooker_GB_03757_.jpg" alt="Wedding bouquet with soft seasonal florals.">
+        <img src="{{ '/assets/images/squarespace/1-GayleBrooker_GB_03757_.jpg' | relative_url }}" alt="Wedding bouquet with soft seasonal florals.">
     </figure>
   </div>
 </section>

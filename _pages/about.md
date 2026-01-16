@@ -3,9 +3,10 @@ layout: splash
 title: "About"
 permalink: /about/
 classes: full-width
+excerpt: "Meet Pat Miller, a master gardener in Redding, Connecticut offering sustainable, garden-inspired floral design."
 ---
 
-## About The Little River Flower Farm
+# About The Little River Flower Farm
 
 The Little River Flower Farm began with a simple love for growing things. What started as a small garden has flourished into a thriving flower farm and design studio, where every stem is nurtured with care and creativity.
 
@@ -26,7 +27,7 @@ Whether you are planning a wedding, an intimate gathering, or simply want to bri
 - DIY Buckets: For creative souls who want to arrange their own flowers, I offer buckets of farm-fresh blooms for any occasion.
 
 <figure class="lr-figure lr-figure--center reveal">
-  <img src="{{ 'assets/images/squarespace/3-IMG_1541.jpeg' | relative_url }}" alt="Flower gardens at The Little River Flower Farm.">
+  <img src="{{ '/assets/images/squarespace/3-IMG_1541.jpeg' | relative_url }}" alt="Flower gardens at The Little River Flower Farm.">
 </figure>
 
 ## Bringing Flowers to Life
@@ -42,7 +43,10 @@ Beyond floral design, I love sharing my passion for flowers with others. Whether
 <section class="lr-contact reveal" id="contact">
   <h2>Contact</h2>
   <p>Share a few details about your event or the blooms you are looking for, and I will be in touch.</p>
-  <form action="mailto:pmiller434@gmail.com" method="post" enctype="text/plain">
+  <form action="{{ site.formspree_endpoint }}" method="post">
+    <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+    <input type="hidden" name="_subject" value="New inquiry from Little River Flower Farm">
+    <input type="hidden" name="_redirect" value="{{ site.url }}{{ site.baseurl }}/thank-you/">
     <label for="contact-name">Name</label>
     <input id="contact-name" name="name" type="text" autocomplete="name" required>
 

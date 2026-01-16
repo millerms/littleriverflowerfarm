@@ -3,6 +3,7 @@ layout: splash
 title: "Flower Stand"
 permalink: /flower-stand/
 classes: full-width
+excerpt: "Weekend flower stand in Redding, Connecticut with grab-and-go bouquets and seasonal pre-orders."
 ---
 <section class="lr-page-hero lr-page-hero--full reveal" style="--hero-image: url('{{ '/assets/images/flowerstand/IMG_1147.jpg' | relative_url }}');">
 </section>

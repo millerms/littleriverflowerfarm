@@ -8,7 +8,7 @@ description: "Organic cut flower farm and floristry studio in Redding, Connectic
 url: "https://millerms.github.io"
 baseurl: "/littleriverflowerfarm"
 locale: en-US
-og_image: 
+og_image: "/assets/images/squarespace/2-IMG_0617.jpg"
 logo: /assets/images/littleriverflowerfarm_logo.webp
 tagline: "Organic cut flower farm in Redding, Connecticut."
 
@@ -26,9 +26,9 @@ footer:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       url: "https://www.instagram.com/thelittleriverflowerfarm?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D"
-    - label: "Email"
+    - label: "Contact"
       icon: "fas fa-fw fa-envelope"
-      url: "mailto:pmiller434@gmail.com"
+      url: "/about/#contact"
 
 # Custom scripts loaded in footer
 footer_scripts:
@@ -45,6 +45,9 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-include-cache
+
+# Formspree endpoint (replace with your form ID)
+formspree_endpoint: "https://formspree.io/f/mkooogdp"
 
 # Navigation
 navigation:
@@ -214,3 +217,9 @@ hide: TRUE
 #   google:
 #     tracking_id: 
 #     anonymize_ip: 
+
+analytics:
+  provider: google-gtag
+  google:
+    tracking_id: G-MZ6YRV9EQ0
+    anonymize_ip: true

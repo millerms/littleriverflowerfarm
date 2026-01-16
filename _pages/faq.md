@@ -3,6 +3,7 @@ layout: splash
 title: "FAQs"
 permalink: /faq/
 classes: full-width
+excerpt: "Answers to common questions about flowers, weddings, farm visits, and DIY buckets."
 ---
 <section class="lr-page-hero lr-page-hero--full reveal" style="--hero-image: url('{{ '/assets/images/squarespace/unsplash-image-B_SLtmXPKNA.jpg' | relative_url }}');">
   <h1 class="lr-page-hero__title">Frequently asked questions</h1>

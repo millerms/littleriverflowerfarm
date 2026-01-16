@@ -3,6 +3,7 @@ layout: splash
 title: "Floral Design Work"
 permalink: /floral-design/
 classes: full-width
+excerpt: "Bespoke garden-inspired floral design for weddings, events, and home decor using locally grown seasonal blooms."
 ---
 <section class="lr-intro reveal">
   <h1 class="lr-hero__title">Floral Design Work</h1>
@@ -63,7 +64,10 @@ classes: full-width
 <section class="lr-contact reveal" id="contact">
   <h2>Contact</h2>
   <p>Share your date, location, and the floral feel you are dreaming of.</p>
-  <form action="mailto:pmiller434@gmail.com" method="post" enctype="text/plain">
+  <form action="{{ site.formspree_endpoint }}" method="post">
+    <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+    <input type="hidden" name="_subject" value="New floral design inquiry">
+    <input type="hidden" name="_redirect" value="{{ site.url }}{{ site.baseurl }}/thank-you/">
     <label for="floral-name">Name</label>
     <input id="floral-name" name="name" type="text" autocomplete="name" required>
 
