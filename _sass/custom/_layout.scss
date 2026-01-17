@@ -35,6 +35,8 @@ html, body {
 /* Add breathing room below masthead */
 .page__content { padding-top: 5rem; }
 
+.about-page .page__content { padding-top: 6rem; }
+
 /* Layout containers */
 @container { container-type: inline-size; }
 .l-max-w-sm { max-width: 640px; }

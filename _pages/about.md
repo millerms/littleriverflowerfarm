@@ -2,7 +2,7 @@
 layout: splash
 title: "About"
 permalink: /about/
-classes: full-width
+classes: full-width about-page
 excerpt: "Meet Pat Miller, a master gardener in Redding, Connecticut offering sustainable, garden-inspired floral design."
 ---
 
